@@ -1,0 +1,23 @@
+.Header {
+    padding: 20px 150px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.Links {
+    float: right;
+}
+
+.Links ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.Links li {
+    padding: 0 20px;
+}
+
+.Links li a {
+    text-decoration: none;
+    color: black;
+}
