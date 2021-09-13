@@ -13,13 +13,13 @@ const headerpage = () => {
                 <Row>
                     <Col>
                         <div>
-                            <img src={Logo} />
+                            <a href="#" ><img src={Logo} /></a>
                             <div className={classes.Links}>
                                 <ul>
                                     <li><a href="#">Features</a></li>
                                     <li><a href="#">Pricing</a></li>
                                     <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Login</a></li>
+                                    <li className={classes.Login}><a href="#">Login</a></li>
                                 </ul>
                             </div>
                         </div>

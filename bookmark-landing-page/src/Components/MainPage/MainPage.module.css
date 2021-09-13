@@ -1,0 +1,30 @@
+.MainPage {
+    padding: 20px 50px 20px 130px;
+    margin-top: 100px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.LeftSide {
+    width: 400px;
+}
+
+.LeftSide h1 {
+    font-weight: bold;
+}
+
+.LeftSide p {
+    font-size: 18px;
+    color: #abaaaf;
+}
+
+.ChromeButton {
+    background-color: #5266e1;
+    border-color: #97a2d3;
+}
+
+.FFButton {
+    margin-left: 20px;
+    background-color: #f7f7f7;
+    border-color: #fbfbfb;
+    color: black;
+}

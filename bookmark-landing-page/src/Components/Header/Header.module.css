@@ -1,5 +1,5 @@
 .Header {
-    padding: 20px 150px;
+    padding: 20px 130px 20px 130px;
     font-family: 'Rubik', sans-serif;
     
 }
@@ -14,10 +14,20 @@
 }
 
 .Links li {
-    padding: 0 20px;
+    padding: 5px 28px;
 }
 
 .Links li a {
     text-decoration: none;
     color: black;
+}
+
+.Login {
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.Login a {
+    color: white !important;
 }

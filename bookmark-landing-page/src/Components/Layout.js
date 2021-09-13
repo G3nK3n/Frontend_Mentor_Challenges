@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Header from './Header/Header';
+import MainPage from './MainPage/MainPage';
+
 import classes from '../Components/Layout.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,8 +15,9 @@ class Layout extends Component {
     render() {
         return(
             <div>
-                <Container  className={classes.Layout}>          
+                <Container className={classes.Layout}>          
                     <Header />
+                    <MainPage />
                 </Container>
             </div>
         )
