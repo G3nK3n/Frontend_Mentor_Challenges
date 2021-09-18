@@ -5,26 +5,42 @@
 }
 
 .LeftSide {
-    width: 400px;
+    width: 435px;
 }
 
 .LeftSide h1 {
     font-weight: bold;
+    font-size: 40px
 }
 
 .LeftSide p {
-    font-size: 18px;
+    font-size: 24px;
+    margin-top: 20px;
     color: #abaaaf;
 }
 
 .ChromeButton {
-    background-color: #5266e1;
-    border-color: #97a2d3;
+    background-color: #5366e1 !important;
+    border-color: #97a2d3 !important;
 }
 
 .FFButton {
     margin-left: 20px;
-    background-color: #f7f7f7;
-    border-color: #fbfbfb;
-    color: black;
+    background-color: #f7f7f7 !important;
+    border-color: #fbfbfb !important;
+    color: black !important;
+}
+
+.mainImage {
+    position: relative;
+}
+
+.backgroundDiv {
+    background-color: #4f63d5;
+    width: 536px;
+    height: 346px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: absolute;
+    margin: 139px 0 0 183px;
 }
