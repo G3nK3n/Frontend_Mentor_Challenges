@@ -1,0 +1,34 @@
+.Features {
+    padding: 20px 50px 20px 130px;
+}
+
+.FeaturesTitle {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 0 228px;
+}
+
+.FeaturesTitle h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.FeaturesTitle p {
+    color: #abaaaf;
+    font-size: 20px;
+}
+
+/* Tabs section */
+
+.Tabs {
+    text-align: center;
+    margin-right: 58px;
+
+}
+
+.Tabs a {
+    text-decoration: none;
+    color: #838489;
+    padding: 0 45px;
+    border-bottom: solid #e7e7ee;
+}
