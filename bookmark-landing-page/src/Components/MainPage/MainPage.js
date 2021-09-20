@@ -22,7 +22,6 @@ const mainpage = () => {
                 </Col>
                 <Col>
                     <div className={classes.backgroundDiv}>
-
                     </div>
                     <div className={classes.mainImage}>
                         <img src={Img1} />

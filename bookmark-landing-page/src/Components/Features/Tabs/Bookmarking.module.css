@@ -1,0 +1,13 @@
+.backgroundDiv {
+    background-color: #4f63d5;
+    width: 536px;
+    height: 346px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    position: absolute;
+    margin: 70px 0 0 -142px;
+}
+
+.mainImage {
+    position: relative;
+}
