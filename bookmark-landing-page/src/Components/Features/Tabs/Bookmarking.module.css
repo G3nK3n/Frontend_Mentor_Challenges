@@ -11,3 +11,25 @@
 .mainImage {
     position: relative;
 }
+
+.RightSide {
+    /* width: 435px; */
+    margin-left: 60px;
+    margin-top:50px;
+}
+
+.RightSide h1 {
+    font-weight: bold;
+    font-size: 40px
+}
+
+.RightSide p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #abaaaf;
+}
+
+.InfoButton {
+    background-color: #5366e1 !important;
+    border-color: #97a2d3 !important;
+}

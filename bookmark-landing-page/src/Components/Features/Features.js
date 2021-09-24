@@ -69,9 +69,9 @@ class Features extends Component {
                     </p>
                 </div>
                 <div className={classes.Tabs}>
-                    <a href="#" onClick={this.getBookmarking} >Simple Bookmarking</a>
-                    <a href="#" onClick={this.getSearching}>Speedy Searching</a>
-                    <a href="#" onClick={this.getSharing}>Easy Sharing</a>
+                    <a href="javascript:void(0);" onClick={this.getBookmarking} >Simple Bookmarking</a>
+                    <a href="javascript:void(0);" onClick={this.getSearching}>Speedy Searching</a>
+                    <a href="javascript:void(0);" onClick={this.getSharing}>Easy Sharing</a>
                 </div>
                 <div className={classes.TabsInfo}>
                     {thePage}
