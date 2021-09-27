@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import classes from '../Features/Features.module.css';
 
 import Bookmarking from '../Features/Tabs/Bookmarking';
+import Speedy from '../Features/Tabs/Speedy';
+import Sharing from '../Features/Tabs/Sharing';
 
 class Features extends Component {
 
@@ -43,14 +45,14 @@ class Features extends Component {
         else if(this.state.searching) {
             thePage= (
                 <div>
-                    <h1>Searching</h1>
+                    <Speedy />
                 </div>
             )
         }
         else if(this.state.sharing) {
             thePage= (
                 <div>
-                    <h1>Sharing</h1>
+                    <Sharing />
                 </div>
             )
         }
