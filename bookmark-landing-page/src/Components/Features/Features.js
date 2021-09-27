@@ -15,7 +15,7 @@ class Features extends Component {
             sharing: false
         }
     }
-
+    
     getBookmarking = () => {
         this.setState({bookmarking:true, searching:false, sharing:false});
     }
@@ -28,8 +28,6 @@ class Features extends Component {
         this.setState({bookmarking:false, searching:false, sharing:true});
     }
     
-
-
 
     render() {
         

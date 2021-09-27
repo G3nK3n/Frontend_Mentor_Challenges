@@ -29,11 +29,21 @@
 .Tabs a {
     text-decoration: none;
     color: #838489;
-    padding: 0 45px;
+    padding: 0 45px 20px 45px;
     border-bottom: solid #e7e7ee;
 }
 
+.Tabs a:hover {
+    color: #ed9ca0
+}
+
+.Tabs a:focus {
+    border-bottom:solid orange !important;
+    font-weight: bold;
+    color: #2c2d40;
+}
+
 .TabsInfo {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
