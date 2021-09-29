@@ -10,7 +10,7 @@ class Features extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            bookmarking: false,
+            bookmarking: true,
             searching: false,
             sharing: false
         }
@@ -55,8 +55,6 @@ class Features extends Component {
             )
         }
             
-
-
         return(
 
             <div className={classes.Features}>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header/Header';
 import MainPage from './MainPage/MainPage';
 import Features from './Features/Features';
+import Extensions from './Extensions/Extensions';
 
 import classes from '../Components/Layout.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,6 +21,7 @@ class Layout extends Component {
                     <Header />
                     <MainPage />
                     <Features />
+                    <Extensions />
                 </Container>
             </div>
         )
