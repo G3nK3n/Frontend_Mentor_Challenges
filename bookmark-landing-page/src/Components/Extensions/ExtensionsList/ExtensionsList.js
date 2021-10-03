@@ -12,8 +12,9 @@ const extensionslist = () => {
     return(
         <div>
             <div className={classes.OuterList}>
+                {/* MAKE CHANGES  FROM LIST TO  DIVS */}
                 <ul className={classes.TheList}>
-                    <li>
+                    <li className={classes.GoogleExtension}>
                         <img className={classes.SetImages} src={Chrome} />
                         <h6>Add to chrome</h6>
                         <p>Minimum version 6.2</p>
