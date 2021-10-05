@@ -4,16 +4,11 @@
 }
 
 .TheList {
-    margin:100px 0 0 0;
-    list-style: none;
-    display: flex;
-}
-
-.TheList li {
+    margin: 100px 30px 0 0;
+    display: inline-block;
     border: solid #ebedfa;
     text-align: center;
     padding: 40px 0 20px 0;
-    margin: 0 30px 0 0;
     border-radius: 20px;
     box-shadow: 0 3px 10px #f5f6fb;
     font-family: 'Rubik', sans-serif;
@@ -33,6 +28,17 @@
     margin-top:20px;
     font-size: 13px;
     padding: 5px 25px;
+}
+
+.TheList:first-child {
+    position: absolute;
+    left:520px;
+    margin-top:50px
+}
+
+.TheList:last-child {
+    position: absolute;
+    margin-top: 150px;
 }
 
 /* INDIVIDUAL CLASSES FROM  EXTENSIONS */
