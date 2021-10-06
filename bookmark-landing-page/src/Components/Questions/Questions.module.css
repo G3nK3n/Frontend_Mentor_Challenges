@@ -1,0 +1,27 @@
+.Questions {
+    margin-top: 150px;
+}
+
+.QuestionsTitle {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 0 228px;
+}
+
+.QuestionsTitle h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.QuestionsTitle p {
+    color: #abaaaf;
+    font-size: 20px;
+}
+
+/* LIST OF QUESTIONS SECTION */
+
+
+
+.ListOfQuestions ul{
+    list-style: none;
+}

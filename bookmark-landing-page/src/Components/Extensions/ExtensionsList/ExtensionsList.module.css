@@ -28,6 +28,8 @@
     margin-top:20px;
     font-size: 13px;
     padding: 5px 25px;
+    background-color: #5366e1;
+    border-color: #97a2d3;
 }
 
 .TheList:first-child {
@@ -49,8 +51,4 @@
 
 .Dots {
     display:flex;
-}
-
-.GoogleExtension {
-    
 }

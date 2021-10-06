@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import MainPage from './MainPage/MainPage';
 import Features from './Features/Features';
 import Extensions from './Extensions/Extensions';
+import Questions from './Questions/Questions';
 
 import classes from '../Components/Layout.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,6 +23,7 @@ class Layout extends Component {
                     <MainPage />
                     <Features />
                     <Extensions />
+                    <Questions />
                 </Container>
             </div>
         )
