@@ -17,27 +17,30 @@ const questions = () => {
                         </p>
                     </div>
                     <div className={classes.ListOfQuestions}>
-                        
-                        {/* USE DSIPLAY INLINE-BLOCK */}
                         <ul>
                             <li>
-                                <h6>What is Bookmark?</h6>
-                                <div> 
+                                <div className={classes.InnerList}>
+                                    <h6>What is Bookmark?</h6>
                                     <img src={Icon} />
                                 </div>
-                                
                             </li>
                             <li>
-                                <h6>How can I request a new browser?</h6>
-                                <img src={Icon} />
+                                <div className={classes.InnerList}>
+                                    <h6>How can I request a new browser?</h6>
+                                    <img src={Icon} />
+                                </div>
                             </li>
                             <li>
-                                <h6>Is there a mobile app?</h6>
-                                <img src={Icon} />
+                                <div className={classes.InnerList}>
+                                    <h6>Is there a mobile app?</h6>
+                                    <img src={Icon} />
+                                </div>
                             </li>
                             <li>
-                                <h6>What about other Chromium browsers?</h6>
-                                <img src={Icon} />
+                                <div className={classes.InnerList}>
+                                    <h6>What about other Chromium browsers?</h6>
+                                    <img src={Icon} />
+                                </div>
                             </li>
                         </ul>
                     </div>

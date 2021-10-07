@@ -20,8 +20,26 @@
 
 /* LIST OF QUESTIONS SECTION */
 
-
-
 .ListOfQuestions ul{
     list-style: none;
+    text-align: center;
+}
+
+.InnerList {
+    display:inline-block;
+    width: 400px;
+    border-top: solid #efefef;
+    padding: 15px 0 15px 0;
+    text-align: left;
+}
+
+.ListOfQuestions h6 {
+    /* display: inline-block; */
+    display:inline;
+    
+}
+
+.ListOfQuestions img {
+    float: right;
+    margin-top: 7px;
 }
