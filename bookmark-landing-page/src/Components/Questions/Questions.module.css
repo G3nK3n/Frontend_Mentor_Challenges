@@ -33,6 +33,15 @@
     text-align: left;
 }
 
+.InnerList a {
+    text-decoration: none;
+    color: black;
+}
+
+.InnerList a:hover {
+    color: #ed9ca0;
+}
+
 .ListOfQuestions h6 {
     /* display: inline-block; */
     display:inline;

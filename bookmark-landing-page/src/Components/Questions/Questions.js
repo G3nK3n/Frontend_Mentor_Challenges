@@ -20,26 +20,34 @@ const questions = () => {
                         <ul>
                             <li>
                                 <div className={classes.InnerList}>
-                                    <h6>What is Bookmark?</h6>
-                                    <img src={Icon} />
+                                    <a href="javascript:void(0);">
+                                        <h6>What is Bookmark?</h6>
+                                        <img src={Icon} />
+                                    </a>
                                 </div>
                             </li>
                             <li>
                                 <div className={classes.InnerList}>
-                                    <h6>How can I request a new browser?</h6>
-                                    <img src={Icon} />
+                                    <a href="javascript:void(0);">
+                                        <h6>How can I request a new browser?</h6>
+                                        <img src={Icon} />
+                                    </a>
                                 </div>
                             </li>
                             <li>
                                 <div className={classes.InnerList}>
-                                    <h6>Is there a mobile app?</h6>
-                                    <img src={Icon} />
+                                    <a href="javascript:void(0);">
+                                        <h6>Is there a mobile app?</h6>
+                                        <img src={Icon} />
+                                    </a>
                                 </div>
                             </li>
                             <li>
                                 <div className={classes.InnerList}>
-                                    <h6>What about other Chromium browsers?</h6>
-                                    <img src={Icon} />
+                                    <a href="javascript:void(0);">
+                                        <h6>What about other Chromium browsers?</h6>
+                                        <img src={Icon} />
+                                    </a>
                                 </div>
                             </li>
                         </ul>
