@@ -52,3 +52,28 @@
     float: right;
     margin-top: 7px;
 }
+
+/* Gets the last div of the dropdown */
+.ListOfQuestions li:last-child div:first-child { 
+    border-bottom: solid #efefef;
+}
+
+/* Dropdown Sections */
+
+.getBookmark {
+    margin-top: 20px;
+}
+
+/* More Info Button */
+
+.MoreInfoButton {
+    text-align: center;
+    margin-bottom: 150px;
+}
+.MoreInfoButton button {
+    margin-top:20px;
+    font-size: 13px;
+    padding: 10px 15px;
+    background-color: #5366e1;
+    border-color: #97a2d3;
+}
