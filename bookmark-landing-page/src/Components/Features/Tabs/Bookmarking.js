@@ -17,7 +17,7 @@ const bookmarking = () => {
                         </div>
                         
                         <div className={classes.mainImage}>
-                            <img src={Img1} />    
+                            <img src={Img1} alt="bookmarking"/>    
                         </div>
                     </Col>
                     <Col xl={6}>

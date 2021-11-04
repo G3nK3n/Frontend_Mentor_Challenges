@@ -16,7 +16,7 @@ const speedy = () => {
                         </div>
 
                         <div className={classes.mainImage}>
-                            <img src={Img1} />
+                            <img src={Img1} alt="speedy"/>
                         </div>
                     </Col>
                     <Col>

@@ -16,7 +16,7 @@ const easysharing = () => {
                         </div>
 
                         <div className={classes.mainImage}>
-                            <img src={Img1} />
+                            <img src={Img1} alt="sharing" />
                         </div>
                     </Col>
                     <Col>

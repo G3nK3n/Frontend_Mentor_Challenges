@@ -13,7 +13,7 @@ const headerpage = () => {
                 <Row>
                     <Col>
                         <div>
-                            <a href="#" ><img src={Logo} /></a>
+                            <a href="#" ><img src={Logo} alt="Logo" /></a>
                             <div className={classes.Links}>
                                 <ul>
                                     <li><a href="#">Features</a></li>

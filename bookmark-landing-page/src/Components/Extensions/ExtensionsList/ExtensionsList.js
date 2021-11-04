@@ -13,24 +13,24 @@ const extensionslist = () => {
         <div>
             <div className={classes.OuterList}>
                 <div className={classes.TheList}>
-                    <img className={classes.SetImages} src={Chrome} />
+                    <img className={classes.SetImages} alt="chrome" src={Chrome} />
                     <h6>Add to chrome</h6>
                     <p>Minimum version 6.2</p>
-                    <img className={classes.Dots} src={Dots} />
+                    <img className={classes.Dots} alt="dots" src={Dots} />
                     <Button>Add & install Extension</Button>
                 </div>
                 <div className={classes.TheList}>
-                    <img className={classes.SetImages} src={Firefox} />
+                    <img className={classes.SetImages} alt="firefox" src={Firefox} />
                     <h6>Add to Firefox</h6>
                     <p>Minimum version 5.5</p>
-                    <img className={classes.Dots} src={Dots} />
+                    <img className={classes.Dots} alt="dots" src={Dots} />
                     <Button>Add & install Extension</Button>
                 </div>
                 <div className={classes.TheList}>
-                    <img className={classes.SetImages} src={Opera} />
+                    <img className={classes.SetImages} alt="opera" src={Opera} />
                     <h6>Add to Opera</h6>
                     <p>Minimum version 4.6</p>
-                    <img className={classes.Dots} src={Dots} />
+                    <img className={classes.Dots} alt="dots" src={Dots} />
                     <Button>Add & install Extension</Button>
                 </div>
             </div>

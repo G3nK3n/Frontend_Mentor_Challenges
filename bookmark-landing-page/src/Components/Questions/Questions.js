@@ -49,7 +49,7 @@ const Questions = () => {
                                 <div className={classes.InnerList}>
                                     <a onClick={showBookmark} href="javascript:void(0);">
                                         <h6>What is Bookmark?</h6>
-                                        <img src={Icon} />
+                                        <img src={Icon} alt="icon" />
                                     </a>
                                     {getBookmark===true &&
                                     
@@ -66,7 +66,7 @@ const Questions = () => {
                                 <div className={classes.InnerList}>
                                     <a onClick={showRequest} href="javascript:void(0);">
                                         <h6>How can I request a new browser?</h6>
-                                        <img src={Icon} />
+                                        <img src={Icon} alt="icon"/>
                                     </a>
                                     {getRequest===true &&
                                     
@@ -82,7 +82,7 @@ const Questions = () => {
                                 <div className={classes.InnerList}>
                                     <a onClick={showMobileApp} href="javascript:void(0);">
                                         <h6>Is there a mobile app?</h6>
-                                        <img src={Icon} />
+                                        <img src={Icon} alt="icon"/>
                                     </a>
                                     {getMobileApp===true &&
                                     
@@ -98,7 +98,7 @@ const Questions = () => {
                                 <div className={classes.InnerList}>
                                     <a onClick={showChromium} href="javascript:void(0);">
                                         <h6>What about other Chromium browsers?</h6>
-                                        <img src={Icon} />
+                                        <img src={Icon} alt="icon"/>
                                     </a>
                                     {getChromium===true &&
                                     

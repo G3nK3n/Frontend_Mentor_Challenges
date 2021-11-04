@@ -4,13 +4,12 @@ import MainPage from './MainPage/MainPage';
 import Features from './Features/Features';
 import Extensions from './Extensions/Extensions';
 import Questions from './Questions/Questions';
+import Contact from './Contact/Contact';
 
 import classes from '../Components/Layout.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 class Layout extends Component {
 
@@ -24,6 +23,7 @@ class Layout extends Component {
                     <Features />
                     <Extensions />
                     <Questions />
+                    <Contact />
                 </Container>
             </div>
         )
