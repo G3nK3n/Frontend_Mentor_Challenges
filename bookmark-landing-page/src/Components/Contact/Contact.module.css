@@ -1,0 +1,37 @@
+.OuterContact {
+    background-color: #5366e1;
+    padding: 50px 0;
+}
+
+.ContactText, .ContactForm {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+.ContactText {
+    padding: 0px 440px;
+}
+
+.ContactText p {
+    letter-spacing: 5px;
+}
+
+.ContactText h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.ContactForm {
+    margin-top: 30px;
+}
+
+.ContactForm input {
+    margin-right: 20px;
+    padding: 8px 10px;
+}
+
+.ContactForm button {
+    padding: 9px 20px;
+    margin-bottom: 1px;
+}
