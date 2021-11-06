@@ -10,7 +10,12 @@ const contact = () => {
                 <h1>Stay up-to-date with that we're doing</h1>
             </div>
             <div className={classes.ContactForm}>
-                <input type="text" />
+                <div className={classes.innerContact}>
+                    <input type="text" />
+                    <p>
+                        Please make sure its an email
+                    </p>
+                </div>
                 <Button>Contact Us</Button>
             </div>
         </div>

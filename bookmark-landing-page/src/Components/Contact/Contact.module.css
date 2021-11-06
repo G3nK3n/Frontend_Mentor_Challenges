@@ -27,11 +27,31 @@
 }
 
 .ContactForm input {
-    margin-right: 20px;
+    
     padding: 8px 10px;
 }
 
 .ContactForm button {
     padding: 9px 20px;
     margin-bottom: 1px;
+    background-color: hsl(0, 94%, 66%);
+    font-weight: bold;
+    margin-left: 20px
+}
+
+.ContactForm button:hover {
+    background-color: white;
+    color:hsl(0, 94%, 66%);
+    font-weight: bold;
+}
+
+.innerContact {
+    display: inline-grid;
+    background:hsl(0, 94%, 66%);
+}
+
+.innerContact p {
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
 }
