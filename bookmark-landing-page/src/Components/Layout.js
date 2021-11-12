@@ -5,6 +5,7 @@ import Features from './Features/Features';
 import Extensions from './Extensions/Extensions';
 import Questions from './Questions/Questions';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 import classes from '../Components/Layout.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +25,7 @@ class Layout extends Component {
                     <Extensions />
                     <Questions />
                     <Contact />
+                    <Footer />
                 </Container>
             </div>
         )

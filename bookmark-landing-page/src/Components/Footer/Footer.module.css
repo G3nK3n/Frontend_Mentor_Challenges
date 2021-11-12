@@ -1,0 +1,41 @@
+.Header {
+    padding: 20px 130px 20px 130px;
+    font-family: 'Rubik', sans-serif;
+    background: #242946;
+}
+
+.Links {
+    float: left;
+    margin-top:20px;
+}
+
+.Logo {
+    float: left;
+    margin-top:17px;
+}
+
+.Links ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.Links li {
+    padding: 0px 28px;
+}
+
+.Links li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.Login {
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.Login a {
+    color: white !important;
+}
