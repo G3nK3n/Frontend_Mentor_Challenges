@@ -39,3 +39,13 @@
 .Login a {
     color: white !important;
 }
+
+.SocialMedia{
+    float: right;
+    margin-top:20px;
+}
+
+.SocialMedia ul li {
+    display: inline;
+    padding: 0 20px;
+}
