@@ -1,0 +1,31 @@
+import React from "react";
+import Buttons from '../Buttons/Buttons';
+
+import classes from '../ButtonLayout/ButtonLayout.module.css';
+
+const ButtonLayout = () => {
+    return(
+        <div className={classes.ButtonLayout}>
+            <Buttons>7</Buttons>
+            <Buttons>8</Buttons>
+            <Buttons>9</Buttons>
+            <Buttons>DEL</Buttons>
+            <Buttons>4</Buttons>
+            <Buttons>5</Buttons>
+            <Buttons>6</Buttons>
+            <Buttons>+</Buttons>
+            <Buttons>1</Buttons>
+            <Buttons>2</Buttons>
+            <Buttons>3</Buttons>
+            <Buttons>-</Buttons>
+            <Buttons>.</Buttons>
+            <Buttons>0</Buttons>
+            <Buttons>/</Buttons>
+            <Buttons>x</Buttons>
+            <Buttons>RESET</Buttons>
+            <Buttons>=</Buttons>
+        </div>
+    )
+}
+
+export default ButtonLayout;
