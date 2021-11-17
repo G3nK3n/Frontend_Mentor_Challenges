@@ -1,4 +1,24 @@
+.OuterButtonLayout {
+    background: hsl(223, 31%, 20%);
+    text-align: center;
+    margin: 0px 785px;
+}
+
 .ButtonLayout {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px 15px;
+    padding-top:20px;
+}
+
+.ButtonLayout2 {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Reset {
+    width: 200px;
 }

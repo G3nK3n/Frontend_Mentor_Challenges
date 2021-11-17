@@ -1,9 +1,10 @@
 import React from "react";
 import ButtonLayout from './ButtonLayout/ButtonLayout';
+import classes from '../Components/Layout.module.css';
 
 export default function layout() {
     return(
-        <div>
+        <div className={classes.Layout}>
             <ButtonLayout />
         </div>
     )

@@ -1,13 +1,13 @@
 import React from "react";
-import classes from '../Buttons/Buttons.module.css';
+import classes from '../Buttons/Buttons2.module.css';
 import Button from 'react-bootstrap/Button';
 
-const Buttons = (props) => {
+const button2 = (props) => {
     return(
-        <div className={classes.Button}>
+        <div className={classes.Buttons2}>
             <Button>{props.children}</Button>
         </div>
     )
 }
 
-export default Buttons;
+export default button2;
