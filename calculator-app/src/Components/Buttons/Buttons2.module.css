@@ -1,5 +1,8 @@
 .Buttons2 button{
     background: white;
     border: 1px solid black;
-    width: 117px;
+    width: 155px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: 700;
 }
