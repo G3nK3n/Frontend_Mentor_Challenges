@@ -23,7 +23,7 @@
     width: 200px;
 }
 
-/* Change color for Delete button */
+/* Change styling for Delete button */
 .ButtonLayout div:nth-child(4) button, .ButtonLayout2 div:nth-child(1) button{
     background-color: #647299;
     color: #fcffff;
@@ -31,6 +31,7 @@
     font-size: 14px;
 }
 
+/* Change styling for equals button */
 .ButtonLayout2 div:nth-child(2) button {
     background-color: #d13f30;
     color: #fcffff;
