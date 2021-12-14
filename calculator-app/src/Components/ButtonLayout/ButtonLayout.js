@@ -7,7 +7,9 @@ import classes from '../ButtonLayout/ButtonLayout.module.css';
 const ButtonLayout = () => {
     
     const [output, setOutput] = useState('');
+    const [mathOps, setMathOps] = useState('');
     const [storedNumbers, setStoredNumbers] = useState(0);
+
     const outputScreen = (e) => {
         let previous = output;
         setOutput(previous+e.target.value);
@@ -25,34 +27,83 @@ const ButtonLayout = () => {
 
     useEffect(() => {
         setStoredNumbers(0);
+        setMathOps('');
     }, [])
 
     const calculating = (e) => {
-        let tempNumber = storedNumbers;
-        let symbol = String(e.target.value);
-        let previous = tempNumber;
 
-        //Arithmetic seems off, fix this. Ex: When pressing '-' when you wanted to do '+' will result to subtraction instead.
-        if(tempNumber==0) {
-            setStoredNumbers(output);
-            setOutput('');
+        let tempNumber = storedNumbers;
+
+        if(mathOps === '') {
+            setMathOps(String(e.target.value));
+            
+            if(tempNumber == 0) {
+                setStoredNumbers(output);
+                setOutput('');
+            }
         }
-        else if(symbol === "+") {
-            setStoredNumbers(String(Number(previous) + Number(output)));
-            setOutput('');
+        else {
+            if(mathOps === "+") {
+                setStoredNumbers(String(Number(tempNumber) + Number(output)));
+                setOutput('');
+                setMathOps(String(e.target.value));
+            }
         }
-        else if(symbol === "-") {
-            setStoredNumbers(String(Number(previous) - Number(output)));
-            setOutput('');
-        }
-        else if(symbol === "x") {
-            setStoredNumbers(String(Number(previous) * Number(output)));
-            setOutput('');
-        }
-        else if(symbol === "/") {
-            setStoredNumbers(String(Number(previous) - Number(output)));
-            setOutput('');
-        }
+        // else {
+        //     let tempNumber = storedNumbers;
+
+        //     if(tempNumber == 0) {
+        //         setStoredNumbers(output);
+        //         setOutput('');
+        //     }
+        //     else if(symbol === "+") {
+        //         setStoredNumbers(String(Number(previous) + Number(output)));
+        //         setOutput('');
+        //     }
+        //     else if(symbol === "-") {
+        //         setStoredNumbers(String(Number(previous) - Number(output)));
+        //         setOutput('');
+        //     }
+        //     else if(symbol === "x") {
+        //         setStoredNumbers(String(Number(previous) * Number(output)));
+        //         setOutput('');
+        //     }
+        //     else if(symbol === "/") {
+        //         setStoredNumbers(String(Number(previous) - Number(output)));
+        //         setOutput('');
+        //     }
+            
+        // }
+
+
+
+       
+        
+        // let tempNumber = storedNumbers;
+        // let symbol = String(e.target.value);
+        // let previous = tempNumber;
+
+        // //Arithmetic seems off, fix this. Ex: When pressing '-' when you wanted to do '+' will result to subtraction instead.
+        // if(tempNumber==0) {
+        //     setStoredNumbers(output);
+        //     setOutput('');
+        // }
+        // else if(symbol === "+") {
+        //     setStoredNumbers(String(Number(previous) + Number(output)));
+        //     setOutput('');
+        // }
+        // else if(symbol === "-") {
+        //     setStoredNumbers(String(Number(previous) - Number(output)));
+        //     setOutput('');
+        // }
+        // else if(symbol === "x") {
+        //     setStoredNumbers(String(Number(previous) * Number(output)));
+        //     setOutput('');
+        // }
+        // else if(symbol === "/") {
+        //     setStoredNumbers(String(Number(previous) - Number(output)));
+        //     setOutput('');
+        // }
 
         
     }
