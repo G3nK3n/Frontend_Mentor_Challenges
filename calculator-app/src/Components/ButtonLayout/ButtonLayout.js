@@ -22,7 +22,7 @@ const ButtonLayout = () => {
 
     const resetCalculator = () => {
         setOutput('');
-        setStoredNumbers('');
+        setStoredNumbers(0);
     }
 
     useEffect(() => {
@@ -48,64 +48,27 @@ const ButtonLayout = () => {
                 setOutput('');
                 setMathOps(String(e.target.value));
             }
+            else if(mathOps === "-") {
+                setStoredNumbers(String(Number(tempNumber) - Number(output)));
+                setOutput('');
+                setMathOps(String(e.target.value));
+            }
+            else if(mathOps === "x") {
+                setStoredNumbers(String(Number(tempNumber) * Number(output)));
+                setOutput('');
+                setMathOps(String(e.target.value));
+            }
+            else if(mathOps === "/") {
+                setStoredNumbers(String(Number(tempNumber) / Number(output)));
+                setOutput('');
+                setMathOps(String(e.target.value));
+            }
         }
-        // else {
-        //     let tempNumber = storedNumbers;
-
-        //     if(tempNumber == 0) {
-        //         setStoredNumbers(output);
-        //         setOutput('');
-        //     }
-        //     else if(symbol === "+") {
-        //         setStoredNumbers(String(Number(previous) + Number(output)));
-        //         setOutput('');
-        //     }
-        //     else if(symbol === "-") {
-        //         setStoredNumbers(String(Number(previous) - Number(output)));
-        //         setOutput('');
-        //     }
-        //     else if(symbol === "x") {
-        //         setStoredNumbers(String(Number(previous) * Number(output)));
-        //         setOutput('');
-        //     }
-        //     else if(symbol === "/") {
-        //         setStoredNumbers(String(Number(previous) - Number(output)));
-        //         setOutput('');
-        //     }
-            
-        // }
-
-
-
-       
         
-        // let tempNumber = storedNumbers;
-        // let symbol = String(e.target.value);
-        // let previous = tempNumber;
+    }
 
-        // //Arithmetic seems off, fix this. Ex: When pressing '-' when you wanted to do '+' will result to subtraction instead.
-        // if(tempNumber==0) {
-        //     setStoredNumbers(output);
-        //     setOutput('');
-        // }
-        // else if(symbol === "+") {
-        //     setStoredNumbers(String(Number(previous) + Number(output)));
-        //     setOutput('');
-        // }
-        // else if(symbol === "-") {
-        //     setStoredNumbers(String(Number(previous) - Number(output)));
-        //     setOutput('');
-        // }
-        // else if(symbol === "x") {
-        //     setStoredNumbers(String(Number(previous) * Number(output)));
-        //     setOutput('');
-        // }
-        // else if(symbol === "/") {
-        //     setStoredNumbers(String(Number(previous) - Number(output)));
-        //     setOutput('');
-        // }
+    const addPoint = () => {
 
-        
     }
 
     // useEffect(() => {
@@ -135,7 +98,7 @@ const ButtonLayout = () => {
                     <Buttons>-</Buttons>
                 </div>
                 <div>
-                    <Buttons>.</Buttons>
+                    <Buttons testClick={outputScreen}>.</Buttons>
                 </div>
                 <Buttons testClick={outputScreen}>0</Buttons>
                 <div onClick={calculating}>
