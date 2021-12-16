@@ -9,8 +9,13 @@ const ButtonLayout = () => {
     const [output, setOutput] = useState('');
     const [mathOps, setMathOps] = useState('');
     const [storedNumbers, setStoredNumbers] = useState(0);
+    const [equalsSign, setEqualSign] = useState(false);
 
     const outputScreen = (e) => {
+        if(equalsSign == true) {
+            setOutput('');
+            setEqualSign(false);
+        }
         let previous = output;
         setOutput(previous+e.target.value);
     }
@@ -63,17 +68,42 @@ const ButtonLayout = () => {
                 setOutput('');
                 setMathOps(String(e.target.value));
             }
+            
+            // if(equalsSign == true) {
+            //     if(mathOps === "+") {
+            //         setStoredNumbers(String(Number(tempNumber) + Number(output)));
+            //         setOutput('');
+                    
+            //     }
+            //     // else if(mathOps === "-") {
+            //     //     setStoredNumbers(String(Number(tempNumber) - Number(output)));
+            //     //     setOutput('');
+                   
+            //     // }
+            //     // else if(mathOps === "x") {
+            //     //     setStoredNumbers(String(Number(tempNumber) * Number(output)));
+            //     //     setOutput('');
+                    
+            //     // }
+            //     // else if(mathOps === "/") {
+            //     //     setStoredNumbers(String(Number(tempNumber) / Number(output)));
+            //     //     setOutput('');
+                    
+            //     // }
+
+            // }
+
+            
+            
         }
-        
+    
     }
 
-    const addPoint = () => {
-
+    const clickEqual = (e) => {
+        setEqualSign(true);
+        calculating(e);
     }
 
-    // useEffect(() => {
-    //     setStoredNumbers('');
-    // }, [])
     //NOTE: You cannot use a callback event(Such as onClick) on a Custom component. Worse comes to worse, 
     //you can just surround that custom component with a div and add the callback event there(Lazy way?)
     return(
@@ -114,7 +144,7 @@ const ButtonLayout = () => {
                 <div onClick={resetCalculator}>
                     <Buttons2>RESET</Buttons2>
                 </div>
-                <div>
+                <div onClick={clickEqual}>
                     <Buttons2>=</Buttons2>
                 </div>
             </div>
