@@ -1,4 +1,5 @@
 import Layout from './Components/Layout';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

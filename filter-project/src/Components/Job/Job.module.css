@@ -1,0 +1,43 @@
+.Jobs {
+    background: white;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 50px;
+}
+
+.JobDescription {
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.JobDescription h2 {
+    margin-top:10px;
+}
+
+.JobDescription h2, .Tags h2 { 
+    color: #7faaa8;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.JobDescription h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.JobDescription h5 {
+    color: #c1c7c7;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.Tags {
+    float: right;
+    display: inline-flex;
+    padding: 27px;
+}
+
+.Tags h2 {
+    padding: 10px;
+    margin-left: 10px;
+    background: hsl(180, 52%, 96%);
+}
