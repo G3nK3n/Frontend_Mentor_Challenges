@@ -3,7 +3,7 @@ import classes from '../Job/Job.module.css';
 
 const Jobs = () => {
     return(
-        //HARDCODING FIRST TO TEST BEFORE TODO LIST STYLE 
+        //TRY ADDING DYNAMICALLY
         <div className={classes.Jobs}>
             <div className={classes.JobDescription}>
                 <h2>Photoshop</h2>
