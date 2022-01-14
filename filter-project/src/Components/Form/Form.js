@@ -17,7 +17,7 @@ const Forms = (props) => {
                 <Form.Control type="schedule" />
                 <Form.Label>Tags</Form.Label>
                 <Form.Control type="tags" />
-                <Button onClick={props.addFilter} type="button">Add</Button>
+                <Button onClick={props.addToFilter} type="button">Add</Button>
             </Form>
         </div>
     )

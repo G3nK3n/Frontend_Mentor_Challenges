@@ -8,13 +8,19 @@ import Forms from './Form/Form';
 const Layout = () => {
     
     const [companyName, setCompanyName] = useState('');
+    const [companyNameArray, setCompanyNameArray] = useState([]);
 
     const handleCompanyName = (e) => {
         setCompanyName(e.target.value);
     }
 
-    const addFilter = (e) => {
+    const addFilter = () => {
         //TEST ARRAY STATES FOR COMPANY NAME, THEN OTHERS AFTER
+        let oldArray = [];
+        oldArray = [...companyNameArray];
+        oldArray.push(companyName);
+        setCompanyNameArray(oldArray);
+
     }
 
     return(
@@ -23,8 +29,12 @@ const Layout = () => {
                 <div>
                     {/* <Job />
                     <Job /> */}
-                    <Forms companyNameValue={handleCompanyName}/>
-                    <p>{companyName}</p>
+                    <Forms addToFilter={addFilter} companyNameValue={handleCompanyName}/>
+                    {companyNameArray.map((name) => {
+                       return(
+                            <p>{name}</p>
+                        ); 
+                    })}
                 </div>
             </Container>
         </div>
