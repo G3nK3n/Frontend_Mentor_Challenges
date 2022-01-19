@@ -1,12 +1,13 @@
 import React from "react";
 import classes from '../Job/Job.module.css';
 
-const Jobs = () => {
+const Jobs = (props) => {
     return(
         //TRY ADDING DYNAMICALLY
         <div className={classes.Jobs}>
             <div className={classes.JobDescription}>
-                <h2>Photoshop</h2>
+                {/* <h6>ID: {props.index}</h6> */}
+                <h2>{props.theCompanyName}</h2>
                 <h1>Senior Frontend Developer</h1>
                 <h5>Full time - USA Only</h5>
             </div>
