@@ -1,23 +1,27 @@
 import React from "react";
+import classes from './Form.module.css';
+
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 const Forms = (props) => {
-
     
     return(
-        <div>
+        <div className={classes.theForm}>
             <Form>
-                <Form.Label>Company Name</Form.Label>
-                <Form.Control onChange={props.companyNameValue} type="name" />
-                <Form.Label>Job Position</Form.Label>
-                <Form.Control type="position" />
-                <Form.Label>Work Schedule</Form.Label>
-                <Form.Control type="schedule" />
-                <Form.Label>Tags</Form.Label>
-                <Form.Control type="tags" />
-                <Button onClick={props.addToFilter} type="button">Add</Button>
+                {/* Cant figure out how to clear form after adding to filter */}
+                <Form.Control onChange={props.companyNameValue} placeholder="Company Name" type="name" />
+                <br />
+                <Form.Control onChange={props.jobPostingValue} placeholder="Job Position" type="position" />
+                <br />
+                <Form.Control onChange={props.jobSchedule} placeholder="Full-Time or Part-Time?" type="schedule" />
+                <br />
+                <Form.Control onChange={props.jobTags} placeholder="Tags(Add a comma after each tag)" type="tags" />
+                <br />
+                <div className={classes.addButton}>
+                    <Button onClick={props.addToFilter} type="button">Add</Button>
+                </div>
             </Form>
         </div>
     )

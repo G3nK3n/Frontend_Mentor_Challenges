@@ -1,0 +1,19 @@
+.theForm {
+    padding: 0 400px;
+    margin-bottom: 50px;
+}
+
+.theForm input {
+    border: none;
+    border-bottom: 2px solid;
+    background: hsl(180, 52%, 96%);
+}
+
+.addButton {
+    text-align: center;
+}
+
+.addButton button {
+    margin-right: 20px;
+}
+

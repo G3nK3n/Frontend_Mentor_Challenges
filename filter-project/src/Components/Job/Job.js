@@ -8,16 +8,17 @@ const Jobs = (props) => {
             <div className={classes.JobDescription}>
                 {/* <h6>ID: {props.index}</h6> */}
                 <h2>{props.theCompanyName}</h2>
-                <h1>Senior Frontend Developer</h1>
-                <h5>Full time - USA Only</h5>
+                <h1>{props.theJobPosting}</h1>
+                <h5>{props.theTypeOfSchedule} - Canada Only</h5>
             </div>
 
+            {/* This map function outputs the tags from the parent component */}
             <div className={classes.Tags}>
-                <h2>Frontend</h2>
-                <h2>Senior</h2>
-                <h2>HTML</h2>
-                <h2>CSS</h2>
-                <h2>JavaScript</h2>
+                {props.theJobTags.map((values) => {
+                return(
+                        <h2>{values}</h2>
+                    )
+                })}
             </div>
         </div>
     )
