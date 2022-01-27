@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classes from '../Components/Layout.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 
 import Job from './Job/Job';
 import Forms from './Form/Form';
@@ -8,12 +9,23 @@ import Forms from './Form/Form';
 const Layout = () => {
     
     const [companyID, setCompanyID] = useState(0);
+    
+    //Handle states
     const [companyName, setCompanyName] = useState('');
     const [jobPosition, setJobPosition] = useState('');
     const [jobSchedule, setJobSchedule] = useState('');
     const [tags, setTags] = useState([]);
-    const [isEmpty, setIsEmpty] = useState(false);
 
+    const [theFilter, setTheFilter] = useState('');
+
+    //Add data to filter states
+    // const [addCompanyName, setAddCompany] = useState('');
+    // const [addJobPosition, setAddJobPosition] = useState('');
+    // const [addJobSchedule, setAddJobSchedule] = useState('');
+    //const [addCompanyName, setAddCompany] = useState('');
+
+
+    const [isEmpty, setIsEmpty] = useState(false);
 
     const [companyNameArray, setCompanyNameArray] = useState([]);
 
@@ -33,18 +45,23 @@ const Layout = () => {
         setTags(e.target.value);
     }
 
+    const handleFilter = e => {
+        setTheFilter(e.target.value.toLowerCase());
+    }
+
     const addFilter = () => {
                 
         let oldArray = [];
         setCompanyID((oldID) => oldID + 1); //Not working...
-        //This gets the old array, with initializing the array? It still works though.. <--- REVIEW THIS --->
-        if(companyName=='' || jobPosition=='' || jobSchedule=='' || tags=='') {
+        if(companyName==='' || jobPosition==='' || jobSchedule==='' || tags==='') {
             setIsEmpty(true);
         }
         else {
             let theTags = tags.split(",");
+            //This gets the old array, with initializing the array? It still works though.. <--- REVIEW THIS --->
             oldArray = [...companyNameArray, {id: companyID, company: companyName, position: jobPosition, schedule: jobSchedule, tag: theTags}];
             setCompanyNameArray(oldArray);
+            setIsEmpty(false);
         }
         
         
@@ -54,7 +71,7 @@ const Layout = () => {
         return (
             //Since it is objects, make sure you add a the index.??? to update the object
             <div key={i.id}>
-                <Job key={i} index={i.id} theCompanyName={i.company} theJobPosting={i.position} theTypeOfSchedule={i.schedule} theJobTags={i.tag}/>
+                <Job key={i} index={i} theCompanyName={i.company} theJobPosting={i.position} theTypeOfSchedule={i.schedule} theJobTags={i.tag}/>
             </div>
         );
     }
@@ -69,8 +86,53 @@ const Layout = () => {
                     }
                     <Forms addToFilter={addFilter} companyNameValue={handleCompanyName} jobPostingValue={handleJobPosting} jobSchedule={handleJobSchedule}
                         jobTags={handleTags}/>
-                    {companyNameArray.map(eachList)}
+
+                    <Form>
+                        <Form.Control onChange={handleFilter} placeholder="Search By Tag"/>
+                    </Form>
+
+
+                    {/* {companyNameArray.map(eachList)} */}
+
                     
+
+                    {/*theFilter.length ? 
+                        companyNameArray.filter(name => name.tag.includes(theFilter)).map((values, i) => {
+                        return(
+                            <div key={i}>
+                                
+                                
+                                {eachList(i)}
+                            </div>
+                        )
+                        }) : companyNameArray.map(eachList)
+                    */}
+
+                    {/* {theFilter.length ? 
+                        companyNameArray.tag.filter(allTags => allTags.includes(theFilter)).map((values) => {
+                        return(
+                            <div>
+                                {console.log(values)}
+                            </div>
+                        )
+                        }) : companyNameArray.map(eachList)
+                    } */}
+                    
+                    {/* This filters by the tags. If filter is empty, shows everything, else show specific block resulting the filter */}
+                    {theFilter.length ? 
+                        companyNameArray.filter(allTags => allTags.tag.includes(theFilter)).map((values) => {
+                        return(
+                            <div key={values.id}>
+                                {eachList(values)}
+                            </div>
+                        )
+                        }) : companyNameArray.map(eachList)
+                    }
+
+
+
+
+
                 </div>
             </Container>
         </div>

@@ -16,7 +16,7 @@ const Jobs = (props) => {
             <div className={classes.Tags}>
                 {props.theJobTags.map((values) => {
                 return(
-                        <h2>{values}</h2>
+                        <h2 key={values}>{values}</h2>
                     )
                 })}
             </div>
