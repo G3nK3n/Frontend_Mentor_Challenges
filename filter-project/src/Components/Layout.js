@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 
 import Job from './Job/Job';
 import Forms from './Form/Form';
+import { isCompositeComponent } from 'react-dom/cjs/react-dom-test-utils.production.min';
 
 const Layout = () => {
     
@@ -57,12 +58,16 @@ const Layout = () => {
             setIsEmpty(true);
         }
         else {
-            let theTags = tags.split(",");
+            //Split the tags into arrays and trim the unwanted spaces
+            let theTags = tags.split(",").map((values) => {
+                return values.trim();
+            });
             //This gets the old array, with initializing the array? It still works though.. <--- REVIEW THIS --->
             oldArray = [...companyNameArray, {id: companyID, company: companyName, position: jobPosition, schedule: jobSchedule, tag: theTags}];
             setCompanyNameArray(oldArray);
             setIsEmpty(false);
         }
+        
         
         
     }
@@ -90,33 +95,6 @@ const Layout = () => {
                     <Form>
                         <Form.Control onChange={handleFilter} placeholder="Search By Tag"/>
                     </Form>
-
-
-                    {/* {companyNameArray.map(eachList)} */}
-
-                    
-
-                    {/*theFilter.length ? 
-                        companyNameArray.filter(name => name.tag.includes(theFilter)).map((values, i) => {
-                        return(
-                            <div key={i}>
-                                
-                                
-                                {eachList(i)}
-                            </div>
-                        )
-                        }) : companyNameArray.map(eachList)
-                    */}
-
-                    {/* {theFilter.length ? 
-                        companyNameArray.tag.filter(allTags => allTags.includes(theFilter)).map((values) => {
-                        return(
-                            <div>
-                                {console.log(values)}
-                            </div>
-                        )
-                        }) : companyNameArray.map(eachList)
-                    } */}
                     
                     {/* This filters by the tags. If filter is empty, shows everything, else show specific block resulting the filter */}
                     {theFilter.length ? 
@@ -128,10 +106,7 @@ const Layout = () => {
                         )
                         }) : companyNameArray.map(eachList)
                     }
-
-
-
-
+                    
 
                 </div>
             </Container>
