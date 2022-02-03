@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 
 import Job from './Job/Job';
 import Forms from './Form/Form';
-import { isCompositeComponent } from 'react-dom/cjs/react-dom-test-utils.production.min';
+import Button from 'react-bootstrap/Button';
 
 const Layout = () => {
     
@@ -18,6 +18,8 @@ const Layout = () => {
     const [tags, setTags] = useState([]);
 
     const [theFilter, setTheFilter] = useState('');
+
+    const dummyArray = ['test1', 'test2', 'test3'];
 
     //Add data to filter states
     // const [addCompanyName, setAddCompany] = useState('');
@@ -92,12 +94,31 @@ const Layout = () => {
                     <Forms addToFilter={addFilter} companyNameValue={handleCompanyName} jobPostingValue={handleJobPosting} jobSchedule={handleJobSchedule}
                         jobTags={handleTags}/>
 
-                    <Form>
+                    <div className={classes.searchBar}>
+                        {dummyArray.map((values) => {
+                            return (
+                                <div className={classes.outerTagDiv}>
+                                    <div className={classes.searchTags}>
+                                        {values}
+                                    </div>
+                                    <div className={classes.xButton}>
+                                        X    
+                                    </div>
+                                </div>
+                            )
+                        })}
+                        <div className={classes.buttonDiv}>
+                            <Button>Clear</Button>
+                        </div>
+                    </div>
+                    
+                    
+                    {/* <Form>
                         <Form.Control onChange={handleFilter} placeholder="Search By Tag"/>
-                    </Form>
+                    </Form> */}
                     
                     {/* This filters by the tags. If filter is empty, shows everything, else show specific block resulting the filter */}
-                    {theFilter.length ? 
+                    {/* {theFilter.length ? 
                         companyNameArray.filter(allTags => allTags.tag.includes(theFilter)).map((values) => {
                         return(
                             <div key={values.id}>
@@ -105,7 +126,9 @@ const Layout = () => {
                             </div>
                         )
                         }) : companyNameArray.map(eachList)
-                    }
+                    } */}
+
+
                     
 
                 </div>
