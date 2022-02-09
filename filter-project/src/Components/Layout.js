@@ -19,7 +19,7 @@ const Layout = () => {
 
     const [theFilter, setTheFilter] = useState('');
 
-    const dummyArray = ['test1', 'test2', 'test3'];
+    const [dummyArray, setDummyArray] = useState(['test1', 'test2', 'test3']);
 
     //Add data to filter states
     // const [addCompanyName, setAddCompany] = useState('');
@@ -83,6 +83,19 @@ const Layout = () => {
         );
     }
 
+    const closeTag = (value) => {
+        
+        // let someArray = [];
+        // someArray = [...dummyArray];
+        // someArray.splice(e, 1);
+        // setDummyArray(someArray);
+
+        // console.log("Clicked on: " + value);
+
+        //This filters out the specific item in the array
+        setDummyArray(dummyArray.filter(item => item!== value));
+    }
+
     return(
         <div className={classes.Filter}>
             <Container>
@@ -97,11 +110,11 @@ const Layout = () => {
                     <div className={classes.searchBar}>
                         {dummyArray.map((values) => {
                             return (
-                                <div className={classes.outerTagDiv}>
+                                <div key={values} className={classes.outerTagDiv}>
                                     <div className={classes.searchTags}>
                                         {values}
                                     </div>
-                                    <div className={classes.xButton}>
+                                    <div onClick={() => closeTag(values)} className={classes.xButton}>
                                         X    
                                     </div>
                                 </div>
@@ -128,7 +141,7 @@ const Layout = () => {
                         }) : companyNameArray.map(eachList)
                     } */}
 
-                    {/* Test */}
+                    {/* FIGURE OUT KEYS FOR DELETING TAGS */}
 
 
                     
