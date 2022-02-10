@@ -52,8 +52,11 @@ const Layout = () => {
         setTheFilter(e.target.value.toLowerCase());
     }
 
+    const addTagToSearch = e => {
+        setDummyArray(oldArray => [...oldArray, e.target.innerText]);
+    }
+
     const addFilter = () => {
-                
         let oldArray = [];
         setCompanyID((oldID) => oldID + 1); //Not working...
         if(companyName==='' || jobPosition==='' || jobSchedule==='' || tags==='') {
@@ -78,7 +81,7 @@ const Layout = () => {
         return (
             //Since it is objects, make sure you add a the index.??? to update the object
             <div key={i.id}>
-                <Job key={i} index={i} theCompanyName={i.company} theJobPosting={i.position} theTypeOfSchedule={i.schedule} theJobTags={i.tag}/>
+                <Job addToSearch={addTagToSearch} key={i} index={i} theCompanyName={i.company} theJobPosting={i.position} theTypeOfSchedule={i.schedule} theJobTags={i.tag}/>
             </div>
         );
     }
@@ -141,7 +144,9 @@ const Layout = () => {
                         }) : companyNameArray.map(eachList)
                     } */}
 
-                    {/* FIGURE OUT KEYS FOR DELETING TAGS */}
+                    {companyNameArray.map(eachList)}
+
+                    
 
 
                     

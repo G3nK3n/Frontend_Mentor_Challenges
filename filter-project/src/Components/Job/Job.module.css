@@ -41,3 +41,7 @@
     margin-left: 10px;
     background: hsl(180, 52%, 96%);
 }
+
+.theTags:hover {
+    cursor:pointer;
+}
