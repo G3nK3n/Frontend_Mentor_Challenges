@@ -19,7 +19,7 @@ const Layout = () => {
 
     const [theFilter, setTheFilter] = useState('');
 
-    const [dummyArray, setDummyArray] = useState(['test1', 'test2', 'test3']);
+    const [dummyArray, setDummyArray] = useState([]);
 
     //Add data to filter states
     // const [addCompanyName, setAddCompany] = useState('');
@@ -53,7 +53,10 @@ const Layout = () => {
     }
 
     const addTagToSearch = e => {
-        setDummyArray(oldArray => [...oldArray, e.target.innerText]);
+        if(!dummyArray.includes(e.target.innerText)) {
+            setDummyArray(oldArray => [...oldArray, e.target.innerText]);
+        }
+        
     }
 
     const addFilter = () => {
@@ -63,10 +66,14 @@ const Layout = () => {
             setIsEmpty(true);
         }
         else {
-            //Split the tags into arrays and trim the unwanted spaces
-            let theTags = tags.split(",").map((values) => {
+            //Split the tags into arrays while removing duplicate values and trim the unwanted spaces
+            let theTags = tags.split(",");
+            theTags = Array.from(new Set(theTags));
+            theTags.map((values) => {
                 return values.trim();
-            });
+            })
+
+
             //This gets the old array, with initializing the array? It still works though.. <--- REVIEW THIS --->
             oldArray = [...companyNameArray, {id: companyID, company: companyName, position: jobPosition, schedule: jobSchedule, tag: theTags}];
             setCompanyNameArray(oldArray);
@@ -87,14 +94,6 @@ const Layout = () => {
     }
 
     const closeTag = (value) => {
-        
-        // let someArray = [];
-        // someArray = [...dummyArray];
-        // someArray.splice(e, 1);
-        // setDummyArray(someArray);
-
-        // console.log("Clicked on: " + value);
-
         //This filters out the specific item in the array
         setDummyArray(dummyArray.filter(item => item!== value));
     }
