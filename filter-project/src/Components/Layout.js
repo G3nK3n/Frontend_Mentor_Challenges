@@ -98,6 +98,24 @@ const Layout = () => {
         setDummyArray(dummyArray.filter(item => item!== value));
     }
 
+    //Checks if each job posting tags match the search tags
+    const checkDummy = (theTags) => {
+        let checkValue = false;
+
+        dummyArray.map((dummyValue) => {
+            if(theTags.includes(dummyValue)) {
+                checkValue = true;
+            }
+            else {
+                checkValue = false;
+            }
+        })
+
+        if(checkValue==true) {
+            return(dummyArray[0]);
+        }
+    }
+
     return(
         <div className={classes.Filter}>
             <Container>
@@ -127,11 +145,6 @@ const Layout = () => {
                         </div>
                     </div>
                     
-                    
-                    {/* <Form>
-                        <Form.Control onChange={handleFilter} placeholder="Search By Tag"/>
-                    </Form> */}
-                    
                     {/* This filters by the tags. If filter is empty, shows everything, else show specific block resulting the filter */}
                     {/* {theFilter.length ? 
                         companyNameArray.filter(allTags => allTags.tag.includes(theFilter)).map((values) => {
@@ -143,13 +156,16 @@ const Layout = () => {
                         }) : companyNameArray.map(eachList)
                     } */}
 
-                    {companyNameArray.map(eachList)}
-
-                    
-
-
-                    
-
+                    {/* This displays the job posting depending on the tags in the search bar, or shows everything if search bar is empty */}
+                    {dummyArray.length > 0 ?        
+                        companyNameArray.filter(allTags => allTags.tag.includes(checkDummy(allTags.tag))).map((values) => {
+                            return(  
+                            <div key={values.id}>
+                                {eachList(values)}
+                            </div>
+                            )
+                        }) : companyNameArray.map(eachList)
+                    }
                 </div>
             </Container>
         </div>
