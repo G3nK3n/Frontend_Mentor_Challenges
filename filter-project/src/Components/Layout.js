@@ -21,13 +21,6 @@ const Layout = () => {
 
     const [dummyArray, setDummyArray] = useState([]);
 
-    //Add data to filter states
-    // const [addCompanyName, setAddCompany] = useState('');
-    // const [addJobPosition, setAddJobPosition] = useState('');
-    // const [addJobSchedule, setAddJobSchedule] = useState('');
-    //const [addCompanyName, setAddCompany] = useState('');
-
-
     const [isEmpty, setIsEmpty] = useState(false);
 
     const [companyNameArray, setCompanyNameArray] = useState([]);
@@ -68,12 +61,8 @@ const Layout = () => {
         else {
             //Split the tags into arrays while removing duplicate values and trim the unwanted spaces
             let theTags = tags.split(",");
-            theTags = Array.from(new Set(theTags));
-            theTags.map((values) => {
-                return values.trim();
-            })
-
-
+            theTags = Array.from(new Set(theTags)); //Removed Duplicates
+        
             //This gets the old array, with initializing the array? It still works though.. <--- REVIEW THIS --->
             oldArray = [...companyNameArray, {id: companyID, company: companyName, position: jobPosition, schedule: jobSchedule, tag: theTags}];
             setCompanyNameArray(oldArray);
@@ -88,7 +77,7 @@ const Layout = () => {
         return (
             //Since it is objects, make sure you add a the index.??? to update the object
             <div key={i.id}>
-                <Job addToSearch={addTagToSearch} key={i} index={i} theCompanyName={i.company} theJobPosting={i.position} theTypeOfSchedule={i.schedule} theJobTags={i.tag}/>
+                <Job addToSearch={addTagToSearch} key={i} index={i} theCompanyName={i.company} theJobPosting={i.position} theTypeOfSchedule={i.schedule} theJobTags={i.tag} closeJob={() => closeJobPosting(i)}/>
             </div>
         );
     }
@@ -101,7 +90,7 @@ const Layout = () => {
     //Checks if each job posting tags match the search tags
     const checkDummy = (theTags) => {
         let checkValue = false;
-
+        console.log(theTags);
         dummyArray.map((dummyValue) => {
             if(theTags.includes(dummyValue)) {
                 checkValue = true;
@@ -114,6 +103,15 @@ const Layout = () => {
         if(checkValue==true) {
             return(dummyArray[0]);
         }
+    }
+
+    const clearDummyArray = () => {
+        setDummyArray([]);
+    }
+
+    const closeJobPosting = (i) => {
+        const name = i.company;
+        setCompanyNameArray(companyNameArray.filter(items => items.company !== name));
     }
 
     return(
@@ -141,20 +139,9 @@ const Layout = () => {
                             )
                         })}
                         <div className={classes.buttonDiv}>
-                            <Button>Clear</Button>
+                            <Button onClick={clearDummyArray}>Clear</Button>
                         </div>
                     </div>
-                    
-                    {/* This filters by the tags. If filter is empty, shows everything, else show specific block resulting the filter */}
-                    {/* {theFilter.length ? 
-                        companyNameArray.filter(allTags => allTags.tag.includes(theFilter)).map((values) => {
-                        return(
-                            <div key={values.id}>
-                                {eachList(values)}
-                            </div>
-                        )
-                        }) : companyNameArray.map(eachList)
-                    } */}
 
                     {/* This displays the job posting depending on the tags in the search bar, or shows everything if search bar is empty */}
                     {dummyArray.length > 0 ?        

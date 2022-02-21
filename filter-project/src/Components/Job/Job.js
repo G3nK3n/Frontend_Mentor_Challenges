@@ -11,7 +11,9 @@ const Jobs = (props) => {
                 <h1>{props.theJobPosting}</h1>
                 <h5>{props.theTypeOfSchedule} - Canada Only</h5>
             </div>
-
+            <div onClick={props.closeJob} className={classes.closeJob}>
+                <p>X</p>
+            </div>
             {/* This map function outputs the tags from the parent component */}
             <div className={classes.Tags}>
                 {props.theJobTags.map((values) => {
@@ -20,6 +22,7 @@ const Jobs = (props) => {
                     )
                 })}
             </div>
+            
         </div>
     )
 }

@@ -45,3 +45,20 @@
 .theTags:hover {
     cursor:pointer;
 }
+
+.closeJob {
+    display: block;
+    float: right;
+    background: #7faaa8;
+}
+
+.closeJob:hover {
+    cursor:pointer;
+}
+
+.closeJob p {
+    padding: 2px 4px 0 4px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
