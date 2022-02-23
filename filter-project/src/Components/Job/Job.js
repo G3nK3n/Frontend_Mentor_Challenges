@@ -6,7 +6,7 @@ const Jobs = (props) => {
         //TRY ADDING DYNAMICALLY
         <div className={classes.Jobs}>
             <div className={classes.JobDescription}>
-                {/* <h6>ID: {props.index}</h6> */}
+                {/* <h6>ID: {props.theID}</h6> */}
                 <h2>{props.theCompanyName}</h2>
                 <h1>{props.theJobPosting}</h1>
                 <h5>{props.theTypeOfSchedule} - Canada Only</h5>

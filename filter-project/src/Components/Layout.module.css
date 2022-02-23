@@ -3,7 +3,11 @@ body {
 }
 
 .Filter {
-    margin-top: 50px;
+    
+}
+
+.HeaderImage {
+    text-align: center;
 }
 
 .searchBar {
@@ -20,6 +24,8 @@ body {
     color: #7faaa8;
     font-size: 15px;
     font-weight:bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .outerTagDiv {
@@ -57,7 +63,10 @@ body {
     background: #5ca5a5;
     color: white;
     font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .xButton:hover {
     cursor: pointer;
+    background: black;
 }

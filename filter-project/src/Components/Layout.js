@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import classes from '../Components/Layout.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import HeaderImage from '../bg-header-desktop.svg';
 
 import Job from './Job/Job';
 import Forms from './Form/Form';
@@ -110,12 +111,13 @@ const Layout = () => {
     }
 
     const closeJobPosting = (i) => {
-        const name = i.company;
-        setCompanyNameArray(companyNameArray.filter(items => items.company !== name));
+        const someID = i.id;
+        setCompanyNameArray(companyNameArray.filter(items => items.id !== someID));
     }
 
     return(
         <div className={classes.Filter}>
+            <div className={classes.HeaderImage}><img src={HeaderImage}></img></div>
             <Container>
                 <div>
                     {isEmpty===true?
