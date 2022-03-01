@@ -1,14 +1,18 @@
 import React from "react";
 import Logo from '../../logo.svg';
+import classes from './Header.module.css';
 
 const Header = () => {
     return (
         <div>
-            <div>
+            <div className={classes.Logo}>
                 <img src={Logo} />
             </div>
             {/* Straight white line goes here */}
-            <div>
+            <div className={classes.tempDiv}>
+
+            </div>
+            <div className={classes.Links}>
                 <ul>
                     <li>00 Home</li>
                     <li>01 Destination</li>

@@ -1,0 +1,35 @@
+.Logo {
+    display: inline-block;
+}
+
+.Links {
+    float: right;
+    padding: 30px 0px 30px 200px;
+    margin-top: 40px;
+    background: #979797;
+    /* background: rgba(255, 255, 255, 0.2); */   
+}
+.tempDiv {
+    float: right;
+    padding: 30px 0px 30px 200px;
+    margin-top: 40px;
+    background: black;
+    /* background: rgba(255, 255, 255, 0.2); */   
+}
+
+.Links ul {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin-right: 150px;
+    
+}
+
+.Links li {
+    padding-right: 30px;
+}
