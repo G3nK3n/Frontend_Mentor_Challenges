@@ -8,10 +8,10 @@ const Header = () => {
             <div className={classes.Logo}>
                 <img src={Logo} />
             </div>
-            {/* Straight white line goes here */}
-            <div className={classes.tempDiv}>
+            
+            {/* <div className={classes.whiteLine}></div> */}
 
-            </div>
+            <div className={classes.tempDiv}></div>
             <div className={classes.Links}>
                 <ul>
                     <li><p><b>00</b> Home</p></li>

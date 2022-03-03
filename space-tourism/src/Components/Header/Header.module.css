@@ -1,11 +1,23 @@
 .Logo {
     display: inline-block;
+    position: absolute;
+    left: 75px;
+    top: 68px;
+}
+.whiteLine {
+    border-top-style: groove;
+    border-width: 1px thin;
+    border-color: white;
+    width: 473px;
+    position: absolute;
+    top: 91px;
+    left: 167px;
 }
 
 .Links {
     float: right;
     padding: 30px 0px 30px 200px;
-    margin-top: 40px;
+    margin-top: 54px;
     
     position:relative;
     /* background: rgba(255, 255, 255, 0.2); */   
