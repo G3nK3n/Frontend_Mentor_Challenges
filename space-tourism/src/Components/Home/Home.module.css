@@ -30,3 +30,25 @@
     line-height: 32px;
     color: #D0D6F9;
 }
+
+/* Explore Button */
+
+.ExploreButton {
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    left: 1301px;
+    top: 450px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+.ExploreButton h4{
+    font-family: Bellefair;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 117px;
+}

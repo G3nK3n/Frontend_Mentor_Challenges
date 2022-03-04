@@ -17,6 +17,9 @@ const Home = () => {
                         a truly out of this world experience!
                     </p>
                 </div>
+                <div className={classes.ExploreButton}>
+                    <h4>EXPLORE</h4>
+                </div>
             </Container>
         </div>
     )
