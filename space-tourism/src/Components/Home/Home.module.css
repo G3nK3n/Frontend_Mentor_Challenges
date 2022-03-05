@@ -41,8 +41,8 @@
     top: 450px;
     background-color: white;
     border-radius: 50%;
-    
 }
+
 
 .ExploreButton h4{
     font-family: Bellefair;
@@ -51,4 +51,32 @@
     letter-spacing: 2px;
     text-align: center;
     margin-top: 117px;
+}
+
+.ExploreButtonHover {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 1240px;
+    top: 390px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.innerHover {
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    left: 60px;
+    top: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.ExploreButtonHover:hover {
+    opacity: 0.1;
+    cursor: pointer;
+    /* position: relative;
+    left:930px; */
 }

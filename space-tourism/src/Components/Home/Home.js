@@ -17,8 +17,17 @@ const Home = () => {
                         a truly out of this world experience!
                     </p>
                 </div>
+
                 <div className={classes.ExploreButton}>
                     <h4>EXPLORE</h4>
+                </div>
+
+                {/* Created a inner circle so that the Explore button will stay white
+                    when hovering, making it seems like the ExploreButtonHover is behind
+                    ExploreButton div. Doing this until I figure out how to make the 
+                    divs go behind the other */}
+                <div className={classes.ExploreButtonHover}>
+                    <div className={classes.innerHover}></div>
                 </div>
             </Container>
         </div>
