@@ -14,10 +14,10 @@ const Header = () => {
             <div className={classes.tempDiv}></div>
             <div className={classes.Links}>
                 <ul>
-                    <li><a href="#"><p><b>00</b>Home</p></a></li>
-                    <li><a href="#"><p><b>01</b>Destination</p></a></li>
-                    <li><a href="#"><p><b>02</b>Crew</p></a></li>
-                    <li><a href="#"><p><b>03</b>Technology</p></a></li>
+                    <li><a href="#"><p><div><b>00</b>Home</div></p></a></li>
+                    <li><a href="#"><p><div><b>01</b>Destination</div></p></a></li>
+                    <li><a href="#"><p><div><b>02</b>Crew</div></p></a></li>
+                    <li><a href="#"><p><div><b>03</b>Technology</div></p></a></li>
                 </ul>
             </div>
 

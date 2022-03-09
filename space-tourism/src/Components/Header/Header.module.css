@@ -49,9 +49,22 @@
     transform: scaleY(1.5)
 }
 
+.Links ul li div {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 24px;
+}
+
+.Links ul li div:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .Links ul li p{
     margin: 0px;
     letter-spacing: 3.7px;
+}
+
+.Links dl, ol, ul {
+    margin-top: 11px;
 }
 
 .Links a {
