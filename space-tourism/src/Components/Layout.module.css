@@ -6,3 +6,11 @@
     min-height: 900px;
     min-width: 1440px;
 }
+
+/* SCREEN SIZE STYLES */
+
+@media (max-width: 1440px) {
+    .BackgroundImage {
+        min-width: 0;
+    }
+}

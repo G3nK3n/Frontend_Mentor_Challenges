@@ -68,7 +68,7 @@
     position: absolute;
     width: 274px;
     height: 274px;
-    left: 60px;
+    left: 63px;
     top: 60px;
     background-color: white;
     border-radius: 50%;
@@ -81,3 +81,24 @@
     left:930px; */
 }
 
+/* SCREEN SIZE STYLES */
+
+@media (max-width: 1600px) {
+    .ExploreButton {
+        left: 1100px;
+    }
+
+    .ExploreButtonHover {
+        left: 1037px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .ExploreButton {
+        left: 1000px
+    }
+
+    .ExploreButtonHover {
+        left: 935px;
+    }
+}
