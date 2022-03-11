@@ -102,3 +102,34 @@
         left: 935px;
     }
 }
+
+@media (max-width: 1200px) {
+    .ExploreButton {
+        left: 800px
+    }
+
+    .ExploreButtonHover {
+        left: 735px;
+    }
+
+    .HomeText {
+        left: 65px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ExploreButton {
+        left: 358px;
+        top: 770px;
+    }
+
+    .ExploreButtonHover {
+        left: 293px;
+        top: 702px
+    }
+
+    .HomeText {
+        left: 270px;
+        top: 302px;
+    }
+}
