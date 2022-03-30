@@ -133,3 +133,20 @@
         top: 302px;
     }
 }
+
+@media (max-width: 768px) {
+    .ExploreButton {
+        left: 238px;
+        top: 770px;
+    }
+
+    .ExploreButtonHover {
+        left: 173px;
+        top: 702px
+    }
+
+    .HomeText {
+        left: 150px;
+        top: 302px;
+    }
+}

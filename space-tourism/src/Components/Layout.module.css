@@ -20,3 +20,9 @@
         min-height: 1100px;
     }
 }
+
+@media (max-width: 768px) {
+    .BackgroundImage {
+        background-image: url("../background-home-tablet.jpg") ;
+    }
+}

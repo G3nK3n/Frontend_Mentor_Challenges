@@ -8,7 +8,8 @@ import Col from 'react-bootstrap/Col';
 const Header = () => {
     return (
         <div>
-            <Row>
+            {/* The g-0 removes the margins 1.5px on each side. Available on Bootstrap V5 */}
+            <Row className="g-0">
                 <Col className="d-none d-md-block">
                     {/* d-none d-lg-block */}
                     <div className={classes.Logo}>
