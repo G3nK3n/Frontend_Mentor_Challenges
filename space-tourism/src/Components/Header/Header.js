@@ -28,8 +28,8 @@ const Header = () => {
                         </ul>
                     </div>
                 </Col>
-                <Col className="d-block d-lg-none">
-                    {/* d-none d-lg-block */}
+                <Col className="d-none d-sm-block d-md-block d-lg-none">
+                    {/* d-block d-lg-none */}
                     <div className={classes.Logo}>
                         <img src={Logo} />
                     </div>
