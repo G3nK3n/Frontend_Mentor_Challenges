@@ -150,3 +150,36 @@
         top: 302px;
     }
 }
+
+@media (max-width: 375px) {
+    .HomeText {
+        width: 375px;
+        left: 0px;
+        padding: 0px 25px;
+    }
+    
+    .HomeText h5 {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .HomeText h1{
+        text-align: center;
+        font-size: 80px;
+    }
+
+    .HomeText p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .ExploreButton {
+        left: 50px;
+    }
+
+    .ExploreButtonHover {
+        display: none;
+        left: 26px;
+        top: 700px;
+    }
+}
