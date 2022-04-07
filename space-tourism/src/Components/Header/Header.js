@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../../logo.svg';
+import Hamburger from '../../icon-hamburger.svg';
 import classes from './Header.module.css';
 
 import Row from 'react-bootstrap/Row';
@@ -11,7 +12,7 @@ const Header = () => {
             {/* The g-0 removes the margins 1.5px on each side. Available on Bootstrap V5 */}
             <Row className="g-0">
                 <Col className="d-none d-lg-block">
-                    {/* d-none d-lg-block */}
+                    {/* Visible only in large screen and above */}
                     <div className={classes.Logo}>
                         <img src={Logo} />
                     </div>
@@ -29,7 +30,7 @@ const Header = () => {
                     </div>
                 </Col>
                 <Col className="d-none d-sm-block d-md-block d-lg-none">
-                    {/* d-block d-lg-none */}
+                    {/* Visible only in small and medium screen */}
                     <div className={classes.Logo}>
                         <img src={Logo} />
                     </div>
@@ -44,6 +45,15 @@ const Header = () => {
                             <li><a href="#"><span><div>Crew</div></span></a></li>
                             <li><a href="#"><span><div>Technology</div></span></a></li>
                         </ul>
+                    </div>
+                </Col>
+                <Col className="d-block d-sm-none">
+                    <div className={classes.Logo}>
+                        <img src={Logo} />
+                    </div>
+
+                    <div className={classes.Hamburger}>
+                        <img src={Hamburger} />
                     </div>
                 </Col>
             </Row>
