@@ -156,6 +156,7 @@
         width: 375px;
         left: 0px;
         padding: 0px 25px;
+        top: 152px;
     }
     
     .HomeText h5 {
@@ -175,6 +176,7 @@
 
     .ExploreButton {
         left: 50px;
+        top: 600px;
     }
 
     .ExploreButtonHover {
