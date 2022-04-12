@@ -7,3 +7,31 @@
 
     backdrop-filter: blur(40px);
 }
+
+.Links {
+    top: 110px; 
+    position:absolute;
+}
+
+.Links ul {
+    list-style-type: none;
+    color: white;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.Links b {
+    margin-right:10px;
+}
+
+.Links a {
+    text-decoration: none;
+    color: white;
+}
+
+.Links li {
+    padding-top: 20px;
+}

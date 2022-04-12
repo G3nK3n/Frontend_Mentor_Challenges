@@ -4,7 +4,14 @@ import classes from './Modal.module.css';
 const Modal = () => {
     return(
         <div className={classes.Modal}>
-            <h1>Some Text</h1>
+            <div className={classes.Links}>
+                <ul>
+                    <li><a href="#"><span><div><b>00</b>Home</div></span></a></li>
+                    <li><a href="#"><span><div><b>01</b>Destination</div></span></a></li>
+                    <li><a href="#"><span><div><b>02</b>Crew</div></span></a></li>
+                    <li><a href="#"><span><div><b>03</b>Technology</div></span></a></li>
+                </ul>
+            </div>
         </div>
     )
 }
