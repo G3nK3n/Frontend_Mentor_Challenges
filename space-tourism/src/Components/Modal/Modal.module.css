@@ -33,5 +33,16 @@
 }
 
 .Links li {
-    padding-top: 20px;
+    padding-top: 40px;
+}
+
+.Links ul li {
+    transform: scaleY(1.5)
+}
+
+.Close {
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    cursor: pointer;
 }

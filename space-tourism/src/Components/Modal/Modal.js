@@ -1,5 +1,6 @@
 import React from "react";
 import classes from './Modal.module.css';
+import Close from '../../icon-close.svg';
 
 const Modal = () => {
     return(
@@ -11,6 +12,9 @@ const Modal = () => {
                     <li><a href="#"><span><div><b>02</b>Crew</div></span></a></li>
                     <li><a href="#"><span><div><b>03</b>Technology</div></span></a></li>
                 </ul>
+            </div>
+            <div>
+                <img className={classes.Close} src={Close} />
             </div>
         </div>
     )
