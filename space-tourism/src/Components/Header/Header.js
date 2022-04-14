@@ -6,7 +6,7 @@ import classes from './Header.module.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
             {/* The g-0 removes the margins 1.5px on each side. Available on Bootstrap V5 */}
@@ -53,7 +53,7 @@ const Header = () => {
                     </div>
 
                     <div className={classes.Hamburger}>
-                        <img src={Hamburger} />
+                        <img onClick={props.openIcon} src={Hamburger} />
                     </div>
                 </Col>
             </Row>

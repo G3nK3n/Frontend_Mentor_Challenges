@@ -2,7 +2,7 @@ import React from "react";
 import classes from './Modal.module.css';
 import Close from '../../icon-close.svg';
 
-const Modal = () => {
+const Modal = (props) => {
     return(
         <div className={classes.Modal}>
             <div className={classes.Links}>
@@ -13,7 +13,7 @@ const Modal = () => {
                     <li><a href="#"><span><div><b>03</b>Technology</div></span></a></li>
                 </ul>
             </div>
-            <div>
+            <div onClick={props.closeIcon}>
                 <img className={classes.Close} src={Close} />
             </div>
         </div>
