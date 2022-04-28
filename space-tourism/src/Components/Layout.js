@@ -11,29 +11,26 @@ const Layout = () => {
     const [hamburgerIcon, setHamburgerIcon] = useState(false);
     
     const closeHamburger = () => {
-        console.log("clicked closed");
         setHamburgerIcon(false);
     }
 
     const openHamburger = () => {
-        console.log("click open");
         setHamburgerIcon(true);
     }
 
     
     return(
         <div className={classes.BackgroundImage}>
-            <Header />
+            <Header openIcon={openHamburger}/>
             <Home />
             <Row>
                 <Col className="d-block d-sm-none">
                     {/* Only appear in SM and X-SM */}
                     {hamburgerIcon === true ? 
                         <div>
-                            <Modal closeIcon={closeHamburger} openIcon={openHamburger}/>
+                            <Modal closeIcon={closeHamburger}  />
                         </div>: null
                     }
-                        
                 </Col>   
             </Row>
             
