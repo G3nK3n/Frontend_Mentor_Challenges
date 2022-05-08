@@ -2,6 +2,7 @@ import React from "react";
 import Logo from '../../logo.svg';
 import Hamburger from '../../icon-hamburger.svg';
 import classes from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -22,10 +23,13 @@ const Header = (props) => {
                 
                     <div className={classes.Links}>
                         <ul>
-                            <li><a href="#"><span><div><b>00</b>Home</div></span></a></li>
-                            <li><a href="#"><span><div><b>01</b>Destination</div></span></a></li>
+                            {/* <li><a href="#"><span><div><b>00</b>Home</div></span></a></li> */}
+                            <li><Link to={"/"}><span><div><b>00</b>Home</div></span></Link></li>
+                            {/* <li><a href="#"><span><div><b>01</b>Destination</div></span></a></li> */}
+                            <li><Link to={"/destination"}><span><div><b>01</b>Destination</div></span></Link></li>
                             <li><a href="#"><span><div><b>02</b>Crew</div></span></a></li>
                             <li><a href="#"><span><div><b>03</b>Technology</div></span></a></li>
+                            
                         </ul>
                     </div>
                 </Col>
