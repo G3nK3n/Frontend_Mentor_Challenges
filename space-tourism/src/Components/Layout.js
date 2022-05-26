@@ -8,9 +8,13 @@ import classes from './Layout.module.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, useLocation} from 'react-router-dom';
 
 const Layout = () => {
+    
+    //Gets your current path 
+    const location = useLocation().pathname;
+    
     const [hamburgerIcon, setHamburgerIcon] = useState(false);
     
     const closeHamburger = () => {
@@ -21,9 +25,18 @@ const Layout = () => {
         setHamburgerIcon(true);
     }
 
+    // This function changes the background image depending on the path your in
+    const backgroundImageChange = () => {
+        if(location=="/") {
+            return classes.BackgroundImage;
+        }
+        else if(location=="/destination") {
+            return classes.Destination;
+        }
+    }
     
     return(
-        <div className={classes.BackgroundImage}>
+        <div className={backgroundImageChange()}>
             <Header openIcon={openHamburger}/>
             <Switch>
                 <Route exact path='/'>
