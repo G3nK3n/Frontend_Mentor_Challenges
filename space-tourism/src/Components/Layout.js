@@ -30,7 +30,7 @@ const Layout = () => {
         if(location=="/") {
             return classes.BackgroundImage;
         }
-        else if(location=="/destination") {
+        else if(location=="/destination" || location=="/destination/moon" || location=="/destination/europa" || location=="/destination/titan" || location=="/destination/mars") {
             return classes.Destination;
         }
     }

@@ -1,0 +1,13 @@
+.Subtitle span, .Subtitle p {
+    color: white;
+}
+
+.Links ul {
+    list-style: none;
+    display: flex;
+}
+
+.Links a {
+    text-decoration: none;
+    color: white;
+}
