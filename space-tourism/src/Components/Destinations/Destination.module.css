@@ -1,10 +1,62 @@
 .Subtitle span, .Subtitle p {
     color: white;
+    /* font-family: 'Barlow Condensed'; */
+    /* font-family: 'Barlow Condensed', sans-serif; */
+    letter-spacing: 4.72px;
+    font-weight: 100;
+}
+
+.Subtitle span {
+    letter-spacing: normal;
+    font-weight: bold;
+    opacity: 0.25;
+}
+
+.Subtitle {
+    font-size: 28px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 226px;
+    top: 232px;
+    transform: scaleY(1.25);
+}
+
+.Subtitle p {
+    display:inline;
+    margin-left: 50px;
+}
+
+.Links {
+    position: absolute;
+    right: 20%;
+    top: 300px;
+    width: 445px;
+}
+
+/* Had to do this so that links wont move when hovering */
+.Links div {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 30px;
+}
+
+.Links ul li div:hover {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
 }
 
 .Links ul {
     list-style: none;
     display: flex;
+    padding-left: 0;
+}
+
+.Links li {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2.72px;
+    margin-right: 40px;
+    transform: scaleY(1.25);
 }
 
 .Links a {
