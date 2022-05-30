@@ -1,0 +1,50 @@
+.Moon div {
+    padding-bottom: 0px;
+    width: 
+}
+
+.Moon h1 {
+    font-size: 110px;
+    font-family: Bellefair;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+}
+
+.MainText {
+    padding-bottom: 40px !important;
+    border-bottom: 1px solid #383B4B!important;
+}
+
+.Paragraphs {
+    color: #D0D6F9;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Barlow';
+}
+
+.Description {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.Description:nth-child(2) {
+    margin-right: 40px;
+}
+
+.Description h5 {
+    color: #D0D6F9;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2.72px;
+    margin-right: 40px;
+    transform: scaleY(1.25);
+}
+
+.Description p {
+    font-family: 'Bellefair';
+    font-size: 28px;
+    color: white;
+
+}
