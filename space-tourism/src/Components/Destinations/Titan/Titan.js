@@ -1,26 +1,25 @@
 import React from "react";
-import classes from "./Moon.module.css";
-import Img1 from "../../../image-moon.png";
+import classes from "./Titan.module.css";
+import Img1 from "../../../image-titan.png";
 
-const Moon = () => {
+const Titan = () => {
     return(
-        <div className={classes.Moon}>
+        <div className={classes.Titan}>
             <div className={classes.MainText}>
-                <h1>Moon</h1>
+                <h1>Titan</h1>
                 <p className={classes.Paragraphs}>
-                    See our planet as you've never seen it before.
-                    A perfect relaxing trip away to help regain perspective and come back refreshed.
-                    While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                    The only moon known to have a dense atmosphere other than Earth, Titan is a home away from
+                    home(just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
                 </p>
             </div>
             
             <div className={classes.Description}>
                 <h5>Avg. Distance</h5>
-                <p>384,400 KM</p>
+                <p>1.6 BIL KM</p>
             </div>
             <div className={classes.Description}>
                 <h5>Est. Travel Time</h5>
-                <p>3 Days</p>
+                <p>7 YEARS</p>
             </div>
             <div className={classes.Image}>
                 <img src={Img1} />
@@ -30,4 +29,4 @@ const Moon = () => {
     )
 }
 
-export default Moon;
+export default Titan;

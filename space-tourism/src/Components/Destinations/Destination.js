@@ -1,6 +1,10 @@
 import React from "react";
 import classes from "./Destination.module.css";
+
 import Moon from './Moon/Moon';
+import Europa from './Europa/Europa';
+import Mars from './Mars/Mars';
+import Titan from './Titan/Titan';
 
 import { Switch, Route, Link } from 'react-router-dom';
 
@@ -18,6 +22,15 @@ const Destination = () => {
                 <Switch>
                     <Route exact path='/destination/moon'>
                         <Moon />
+                    </Route>
+                    <Route exact path='/destination/europa'>
+                        <Europa />
+                    </Route>
+                    <Route exact path='/destination/mars'>
+                        <Mars />
+                    </Route>
+                    <Route exact path='/destination/titan'>
+                        <Titan />
                     </Route>
                 </Switch>
             </div>
