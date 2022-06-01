@@ -19,7 +19,7 @@
 /* SCREEN SIZE STYLES */
 
 @media (max-width: 1440px) {
-    .BackgroundImage {
+    .BackgroundImage, .Destination {
         min-width: 0;
     }
 }

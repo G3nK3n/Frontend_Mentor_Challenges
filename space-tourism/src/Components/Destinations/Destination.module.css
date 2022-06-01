@@ -63,3 +63,15 @@
     text-decoration: none;
     color: white;
 }
+
+/* SCREEN SIZES */
+
+@media (max-width: 1600px) {
+    .Links {
+        right: 7%;
+    }
+}
+
+@media (max-width: 1440px) {
+    
+}

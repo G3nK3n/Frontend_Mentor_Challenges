@@ -54,3 +54,17 @@
     top: 75px;
     display: inline-block;
 }
+
+/* SCREEN SIZES */
+
+@media (max-width: 1600px) {
+    .Image {
+        right: 721px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .Image {
+        right: 561px;
+    }
+}
