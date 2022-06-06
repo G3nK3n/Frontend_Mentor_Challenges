@@ -72,6 +72,20 @@
     }
 }
 
-@media (max-width: 1440px) {
-    
+@media (max-width: 1200px) {
+    .Subtitle {
+        left: 81px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Subtitle {
+        font-size: 18px;
+    }
+
+    .Links {
+        right: 5%;
+    }
+
+
 }
