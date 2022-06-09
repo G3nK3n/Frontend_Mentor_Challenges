@@ -44,8 +44,10 @@ const Header = (props) => {
                 
                     <div className={classes.Links}>
                         <ul>
-                            <li><a href="#"><span><div>Home</div></span></a></li>
-                            <li><a href="#"><span><div>Destination</div></span></a></li>
+                            {/* <li><a href="#"><span><div>Home</div></span></a></li> */}
+                            <li><Link to={"/"}><span><div>Home</div></span></Link></li>
+                            {/* <li><a href="#"><span><div>Destination</div></span></a></li> */}
+                            <li><Link to={"/destination"}><span><div>Destination</div></span></Link></li>
                             <li><a href="#"><span><div>Crew</div></span></a></li>
                             <li><a href="#"><span><div>Technology</div></span></a></li>
                         </ul>

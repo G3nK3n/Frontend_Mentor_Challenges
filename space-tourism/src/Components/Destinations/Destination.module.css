@@ -86,6 +86,19 @@
     .Links {
         right: 5%;
     }
+}
 
+@media (max-width: 768px) {
+    .Subtitle {
+        font-size: 16px;
+        top: 110px;
+    }
 
+    .Subtitle p {
+        margin-left: 15px;
+    }
+
+    .Links {
+        right: 5%;
+    }
 }
