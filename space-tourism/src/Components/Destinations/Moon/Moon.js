@@ -9,7 +9,7 @@ const Moon = () => {
     return(
         <div className={classes.Moon}>
             <Row>
-                <Col className="d-none d-md-block">
+                <Col className="d-none d-lg-block">
                     <div className={classes.MainText}>
                         <h1>Moon</h1>
                         <p className={classes.Paragraphs}>
@@ -34,8 +34,12 @@ const Moon = () => {
             </Row>
             <Row>
                 <Col className="d-sm-block d-md-block d-lg-none">
+                    
+                    <div className={classes.Image}>
+                        <img src={Img1} />
+                    </div>  
                     <div className={classes.MainText}>
-                        <h1>LOL</h1>
+                        <h1>Moon</h1>
                         <p className={classes.Paragraphs}>
                             See our planet as you've never seen it before.
                             A perfect relaxing trip away to help regain perspective and come back refreshed.
