@@ -83,7 +83,11 @@
 @media (max-width: 768px) {
     
     .Image {
-        left: 6%;
+        left: 24%;
         top: -75%;
+    }
+
+    .MainText {
+        text-align: center;
     }
 }
