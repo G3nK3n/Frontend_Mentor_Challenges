@@ -34,6 +34,9 @@
     .BackgroundImage {
         background-image: url("../background-home-tablet.jpg") ;
     }
+    .Destination {
+        min-height: 1024px;
+    }
 }
 
 @media (max-width: 375px) {

@@ -46,6 +46,17 @@ const Moon = () => {
                             While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
                         </p>
                     </div>
+
+                    <div className={classes.outerDescription}>
+                        <div className={classes.Description}>
+                            <h5>Avg. Distance</h5>
+                            <p>384,400 KM</p>
+                        </div>
+                        <div className={classes.Description}>
+                            <h5>Est. Travel Time</h5>
+                            <p>3 Days</p>
+                        </div>
+                    </div>
                 </Col>
             </Row>
             

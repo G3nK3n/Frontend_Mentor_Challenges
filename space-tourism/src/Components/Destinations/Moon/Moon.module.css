@@ -84,10 +84,25 @@
     
     .Image {
         left: 24%;
-        top: -75%;
+        top: -66%;
     }
 
     .MainText {
         text-align: center;
+        padding-bottom: 0px !important;
+    }
+
+    .outerDescription {
+        text-align: center;
+    }
+
+    .Description h5 {
+        font-size: 10px;
+        margin-right: 0px;
+    }
+
+    .Description:nth-child(2) {
+        margin-right: 0px;
+        margin-left: 130px;
     }
 }
