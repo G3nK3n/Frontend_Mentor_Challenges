@@ -109,3 +109,13 @@
         margin-top: 25px;
     }
 }
+
+@media (max-width: 375px) {
+    .Subtitle {
+        left: 55px;
+    }
+
+    .Subtitle p {
+        letter-spacing: 3px;
+    }
+}
