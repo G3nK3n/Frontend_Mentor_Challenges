@@ -118,4 +118,12 @@
     .Subtitle p {
         letter-spacing: 3px;
     }
+
+    .Links {
+        right: -31%;
+    }
+
+    .Links li {
+        font-size: 14px;
+    }
 }
