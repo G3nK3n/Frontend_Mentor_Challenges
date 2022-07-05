@@ -43,4 +43,9 @@
     .BackgroundImage {
         background-image: url("../background-home-mobile.jpg") ;
     }
+
+    .Destination {
+        min-height: 1141px;
+    }
 }
+

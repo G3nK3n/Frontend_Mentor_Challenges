@@ -115,7 +115,26 @@
     }
 
     .Image {
-        left: 60%;
+        left: 33%;
         top: -42%;
+    }
+
+    .Moon h1 {
+        font-size: 56px;
+    }
+
+    .MainText {
+        width: 327px;
+        margin-left: 107px;
+    }
+
+    .Description {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .Description:nth-child(2) {
+        margin-left: 0;
+        margin-right: 30px;
     }
 }

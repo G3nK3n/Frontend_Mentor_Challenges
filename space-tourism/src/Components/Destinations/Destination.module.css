@@ -125,5 +125,12 @@
 
     .Links li {
         font-size: 14px;
+        margin-right: 20px;
     }
+
+    .Links ul {
+        margin-left: 137px;
+    }
+
+    
 }
