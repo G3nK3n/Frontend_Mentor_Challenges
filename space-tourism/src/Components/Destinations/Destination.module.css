@@ -120,7 +120,8 @@
     }
 
     .Links {
-        right: -31%;
+        right: 5%;
+        width: 445px;
     }
 
     .Links li {
