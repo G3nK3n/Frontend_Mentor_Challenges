@@ -3,6 +3,7 @@ import Home from './Home/Home';
 import Destination from './Destinations/Destination';
 import Modal from './Modal/Modal';
 import Header from './Header/Header';
+import Crew from './Crew/Crew';
 
 import classes from './Layout.module.css';
 import Row from 'react-bootstrap/Row';
@@ -24,6 +25,7 @@ const Layout = () => {
     const openHamburger = () => {
         setHamburgerIcon(true);
     }
+    
 
     // This function changes the background image depending on the path your in
     const backgroundImageChange = () => {
@@ -45,15 +47,20 @@ const Layout = () => {
                 <Route path='/destination'>
                     <Destination />
                 </Route>
+                <Route path='/crew'>
+                    <Crew />
+                </Route>
+                
             </Switch>
             <Row>
                 <Col className="d-block d-sm-none">
                     {/* Only appear in SM and X-SM */}
-                    {hamburgerIcon === true ? 
+                    {/* {hamburgerIcon === true ? 
                         <div>
                             <Modal closeIcon={closeHamburger}  />
                         </div>: null
-                    }
+                    } */}
+                   <Modal show={hamburgerIcon} closeIcon={closeHamburger} />
                 </Col>   
             </Row>
         </div>
