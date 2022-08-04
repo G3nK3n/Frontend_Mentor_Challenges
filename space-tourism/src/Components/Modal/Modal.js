@@ -22,7 +22,8 @@ const Modal = (props) => {
                         <li><Link to={"/"}><span><div><b>00</b>Home</div></span></Link></li>
                         {/* <li><a href="#"><span><div><b>01</b>Destination</div></span></a></li> */}
                         <li><Link to={"/destination"}><span><div><b>01</b>Destination</div></span></Link></li>
-                        <li><a href="#"><span><div><b>02</b>Crew</div></span></a></li>
+                        {/* <li><a href="#"><span><div><b>02</b>Crew</div></span></a></li> */}
+                        <li><Link to={"/crew"}><span><div><b>02</b>Destination</div></span></Link></li>
                         <li><a href="#"><span><div><b>03</b>Technology</div></span></a></li>
                     </ul>
                 </div>

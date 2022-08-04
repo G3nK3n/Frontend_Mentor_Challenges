@@ -35,6 +35,9 @@ const Layout = () => {
         else if(location=="/destination" || location=="/destination/moon" || location=="/destination/europa" || location=="/destination/titan" || location=="/destination/mars") {
             return classes.Destination;
         }
+        else if(location=="/crew") {
+            return classes.Crew
+        }
     }
     
     return(

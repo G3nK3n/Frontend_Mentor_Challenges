@@ -1,0 +1,47 @@
+.Subtitle span, .Subtitle p {
+    color: white;
+    /* font-family: 'Barlow Condensed'; */
+    /* font-family: 'Barlow Condensed', sans-serif; */
+    letter-spacing: 4.72px;
+    font-weight: 100;
+}
+
+.Subtitle span {
+    letter-spacing: normal;
+    font-weight: bold;
+    opacity: 0.25;
+}
+
+.Subtitle {
+    font-size: 28px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 226px;
+    top: 232px;
+    transform: scaleY(1.25);
+}
+
+.Subtitle p {
+    display:inline;
+    margin-left: 50px;
+}
+
+.RadioButton {
+    position:absolute;
+    top: 800px;
+    left: 197px;
+}
+
+.RadioButton ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.Dot {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.17;
+}
