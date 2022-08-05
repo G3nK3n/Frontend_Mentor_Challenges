@@ -1,25 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from './Crew.module.css';
+import Douglas from './Douglas/Douglas';
+import { Switch, Route, Link } from 'react-router-dom';
 
 const Crew = () => {
-    
-    const [crewName, setCrewName] = useState("");
-
-    const checkNames = (i) => {
-
-    }
 
     return(
         <div>
             <div className={classes.Subtitle}><span>02</span><p>Meet your crew</p></div>
             <div className={classes.RadioButton}>
                 <ul>
-                    {/* FIX THIS */}
-                    <li><span onClick={(test) => checkNames(this.value)} value={"Douglas"} className={classes.Dot}></span></li>
+                    <li><Link to={"/crew/douglas"}><span className={classes.Dot}></span></Link></li>
                     <li><span className={classes.Dot}></span></li>
                     <li><span className={classes.Dot}></span></li>
                     <li><span className={classes.Dot}></span></li>
                 </ul>
+                <Switch>
+                    <Route exact path='/crew/douglas'>
+                        <Douglas />
+                    </Route>
+                </Switch>
             </div>
         </div>
     )

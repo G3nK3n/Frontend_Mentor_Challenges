@@ -29,13 +29,13 @@ const Layout = () => {
 
     // This function changes the background image depending on the path your in
     const backgroundImageChange = () => {
-        if(location=="/") {
+        if(location==="/") {
             return classes.BackgroundImage;
         }
-        else if(location=="/destination" || location=="/destination/moon" || location=="/destination/europa" || location=="/destination/titan" || location=="/destination/mars") {
+        else if(location==="/destination" || location==="/destination/moon" || location==="/destination/europa" || location==="/destination/titan" || location==="/destination/mars") {
             return classes.Destination;
         }
-        else if(location=="/crew") {
+        else if(location==="/crew" || location==="/crew/douglas") {
             return classes.Crew
         }
     }
