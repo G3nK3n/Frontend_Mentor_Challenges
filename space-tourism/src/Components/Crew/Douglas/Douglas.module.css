@@ -24,3 +24,16 @@
     right: -55px;
     top: -600px;
 }
+
+.crewDescription {
+    width: 504px;
+    position: absolute;
+    top: -200px;
+    left: 27px;
+    line-height: 32px;
+}
+
+.crewDescription p {
+    color: #d0d6f9;
+    font-size: 20px;
+}

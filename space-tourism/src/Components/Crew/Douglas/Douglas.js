@@ -7,14 +7,15 @@ const Douglas = () => {
         <div className={classes.Douglas}>
             <h2>Commander</h2>
             <h1>Douglas Hurley</h1>
-            <img alt="Douglas" src={Image_Douglas} />
-            {/* FIX PARAGRAPH */}
-            <div>
+            <div className={classes.crewDescription}>
                 <p>
                     Douglas Gerarld Hurley us an American engineer, former Marinee Corps pilot and former NASA astronaut.
                     He launched into space for the third time as commander of Crew Dragon Demo-2.
                 </p>
             </div>
+
+            <img alt="Douglas" src={Image_Douglas} />
+            {/* FIX BACKGROUND SIZE FOR 1440px SCREENS */}
         </div>
     )
 }
