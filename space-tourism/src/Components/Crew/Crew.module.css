@@ -46,3 +46,17 @@
     display: inline-block;
     opacity: 0.17;
 }
+
+/* SCREEN SIZE STYLES */
+
+@media (max-width: 1440px) {
+    .RadioButton {
+        width: 1188px;
+        left: 117px;
+    }
+
+    .Subtitle {
+        left: 146px;
+    }
+
+}

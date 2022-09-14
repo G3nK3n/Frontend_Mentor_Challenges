@@ -37,3 +37,9 @@
     color: #d0d6f9;
     font-size: 20px;
 }
+
+/* SCREEN SIZE STYLES */
+
+@media (max-width: 1440px) {
+    
+}

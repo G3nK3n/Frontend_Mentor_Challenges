@@ -15,7 +15,7 @@ const Douglas = () => {
             </div>
 
             <img alt="Douglas" src={Image_Douglas} />
-            {/* FIX BACKGROUND SIZE FOR 1440px SCREENS */}
+            {/* FIX LOGO MARGIN FOR 1440px SCREENS */}
         </div>
     )
 }
