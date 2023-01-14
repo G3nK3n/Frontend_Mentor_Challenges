@@ -1,0 +1,40 @@
+.MainHeaderDiv {
+    background-color: aqua;
+    margin-top: 40px;
+}
+
+.MainHeaderDiv ul{
+    margin-left: 30px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.MainHeaderDiv ul li {
+    margin-right: 50px;
+    color: #36536B;
+    font-size: 15px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.MainHeaderDiv ul, .LeftSideLinks, .MainHeaderDiv ul li{
+    display: inline-block;
+}
+
+.RightSideLinks {
+    float: right;
+}
+
+.RightSideLinks button {
+    font-size: 15px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    background: #BA4270;
+    border-color: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
