@@ -21,7 +21,6 @@ const Header = () => {
                     <Button variant="primary">Schedule a Demo</Button>
                 </div>
             </Container>
-            
         </div>
     )
 }
