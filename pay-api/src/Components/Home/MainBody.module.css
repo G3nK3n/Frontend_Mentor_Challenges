@@ -2,6 +2,24 @@
     background-color: #EDF3F8;
 }
 
+.MainBodyContents {
+    margin-top: 50px;
+}
+
+.MainBodyContents h1 {
+    font-family: 'DM Serif Display';
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 72px;;
+    color: #36536B;
+
+}
+
+.LeftSideContents {
+    width: 546px;
+    margin-top:200px;
+}
+
 .ScheduleDemo button {
     font-size: 15px;
     font-family: 'Public Sans';
