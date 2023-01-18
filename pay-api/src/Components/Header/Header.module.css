@@ -1,5 +1,4 @@
 .MainHeaderDiv {
-    background-color: aqua;
     padding-top: 40px;
     height: 45px;
 }
@@ -42,4 +41,9 @@
     background: #BA4270;
     border-color: #BA4270;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.RightSideLinks button:hover {
+    background: #DA6D97;
+    border-color: #DA6D97;
 }
