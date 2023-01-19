@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 
+import PhoneImage from '../../illustration-phone-mockup.svg';
+import BackgroundCircle from '../../bg-pattern-circle.svg';
+
 const MainBody = () => {
     return(
         <div className={classes.MainBodyDiv}>
@@ -24,7 +27,12 @@ const MainBody = () => {
                         </Form>
                         <p>Have any questions? <b>Contact Us</b></p>
                     </div>
+                    <div>
+                        <img className={classes.PhoneImage} src={PhoneImage} />
+                        <img className={classes.BackgroundCircle} src={BackgroundCircle} />
+                    </div>
                 </div>
+                
             </Container>
         </div>
     )
