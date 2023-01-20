@@ -1,0 +1,33 @@
+.PartnersDiv {
+    background-color: #1B262F;
+    padding-top: 100px;
+}
+
+.LeftSideContent {
+    color: white;
+    width: 445px;
+}
+
+.LeftSideContent h1 {
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    letter-spacing: -0.369231px;
+    font-size: 48px;
+}
+
+.LeftSideContent p {
+    font-family: 'Public Sans';
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 28px;
+}
+
+.LeftSideContent button {
+    background-color: #1B262F;
+    border-color: white;
+    border-radius: 20px;
+    padding: 8px 27px 8px 27px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
