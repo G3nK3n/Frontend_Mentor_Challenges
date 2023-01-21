@@ -1,11 +1,13 @@
 .PartnersDiv {
     background-color: #1B262F;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .LeftSideContent {
     color: white;
     width: 445px;
+    display: inline-block;
 }
 
 .LeftSideContent h1 {
@@ -30,4 +32,25 @@
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
+    margin-top:15px;
+}
+
+.RightSideContent {
+    width: 536px;
+    display: inline-block;
+    position: absolute;
+    right: 250px;
+    top:935px;
+}
+
+.RightTable img{
+    color: white;
+    filter: brightness(6);
+}
+
+.RightTable td {
+    padding-bottom: 40px;
+    padding-right: 55px;
+    text-align: center;
+
 }
