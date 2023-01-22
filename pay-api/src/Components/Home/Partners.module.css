@@ -2,6 +2,10 @@
     background-color: #1B262F;
     padding-top: 100px;
     padding-bottom: 100px;
+    background-image: url('../../bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position-x: -100px;
+    background-position-y: -375px;
 }
 
 .LeftSideContent {

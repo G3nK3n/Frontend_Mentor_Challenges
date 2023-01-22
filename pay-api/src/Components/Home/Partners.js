@@ -12,7 +12,7 @@ import Microsoft from '../../microsoft.svg';
 import Nvidia from '../../nvidia.svg';
 import Oracle from '../../oracle.svg';
 import Tesla from '../../tesla.svg';
-
+import Circle from '../../bg-pattern-circle.svg';
 
 const Partners = () => {
     return(
@@ -42,6 +42,7 @@ const Partners = () => {
                         </tbody>
                     </Table>
                 </div>
+                
             </Container>
         </div>
     )
