@@ -81,21 +81,6 @@ const BottomSection = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                        <div className={classes.OuterStart}>
-                            <h1>Ready to start?</h1>
-                            <Form>
-                                <Form.Group className={classes.FormGroup} controlId="formBasicRequest">
-                                    <Form.Control type="email" placeholder="Enter email address" />
-                                </Form.Group>
-                                <div className={classes.ReadyToStart}>
-                                    <Button variant="primary">Schedule a Demo</Button>
-                                </div>
-                            </Form>
-                        </div>
-                    </Col>
-                </Row>
             </Container>
         </div>
     )
