@@ -1,16 +1,21 @@
 import React from "react";
 
-import MainBody from './Home/MainBody';
-import Partners from './Home/Partners';
-import BottomSection from "./Home/BottomSection";
+import Header from "./Header/Header";
+import Home from './Home/Home';
+import Pricing from './Pricing/Pricing';
+
 import Footer from './Footer/Footer';
+
+import {Routes, Route} from 'react-router-dom';
 
 const Layout = () => {
     return(
         <div>
-            <MainBody />
-            <Partners />
-            <BottomSection />
+            <Header />
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/pricing" element={<Pricing />} />
+            </Routes>
             <Footer />
         </div>
     )

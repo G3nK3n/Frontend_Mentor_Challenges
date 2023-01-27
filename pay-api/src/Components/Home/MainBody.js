@@ -1,5 +1,4 @@
 import React from "react";
-import Header from '../Header/Header';
 import classes from '../Home/MainBody.module.css';
 
 import Button from 'react-bootstrap/Button';
@@ -12,7 +11,6 @@ import BackgroundCircle from '../../bg-pattern-circle.svg';
 const MainBody = () => {
     return(
         <div className={classes.MainBodyDiv}>
-            <Header />
             <Container>
                 <div className={classes.MainBodyContents}>
                     <div className={classes.LeftSideContents}>

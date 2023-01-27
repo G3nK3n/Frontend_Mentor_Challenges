@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -23,10 +24,11 @@ const Footer = () => {
                             <Form>
                                 <Form.Group className={classes.FormGroup} controlId="formBasicRequest">
                                     <Form.Control type="email" placeholder="Enter email address" />
+                                    <div className={classes.ReadyToStart}>
+                                        <Button variant="primary">Schedule a Demo</Button>
+                                    </div>
                                 </Form.Group>
-                                <div className={classes.ReadyToStart}>
-                                    <Button variant="primary">Schedule a Demo</Button>
-                                </div>
+                                
                             </Form>
                         </div>
                     </Col>
@@ -38,9 +40,9 @@ const Footer = () => {
                                 <img src={LogoImage} />
                             </div>
                             <ul>
-                                    <li><p>Pricing</p></li>
-                                    <li><p>About</p></li>
-                                    <li><p>Contact</p></li>
+                                    <li><p><Link to={"/pricing"}>Pricing</Link></p></li>
+                                    <li><p><Link to={"/about"}>About</Link></p></li>
+                                    <li><p><Link to={"/contact"}>Contact</Link></p></li>
                                 </ul>
                             <div className={classes.RightSideLinks}>
                                 <img src={FacebookImage} className={classes.SocialMedia}/>

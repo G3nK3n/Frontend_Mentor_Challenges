@@ -1,6 +1,8 @@
 import React from "react";
 import classes from '../Header/Header.module.css';
 
+import { Link } from 'react-router-dom';
+
 import LogoImage from '../../logo.svg';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
@@ -13,9 +15,9 @@ const Header = () => {
                     <img src={LogoImage} />
                 </div>
                 <ul>
-                        <li>Pricing</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li><Link to={"/pricing"}>Pricing</Link></li>
+                        <li><Link to={"/about"}>About</Link></li>
+                        <li><Link to={"/contact"}>Contact</Link></li>
                     </ul>
                 <div className={classes.RightSideLinks}>
                     <Button variant="primary">Schedule a Demo</Button>
