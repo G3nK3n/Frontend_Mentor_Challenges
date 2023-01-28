@@ -2,7 +2,8 @@
     margin-top: 50px;
     margin-bottom: 50px;
     color: #36536B;
-    padding: 0px 300px;
+    padding-left: 300px;
+    padding-right: 230px;
 }
 
 .OuterStart h1{
@@ -46,10 +47,13 @@
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
 
+/* Make sure you dont use top, bottom, etc because it will stay fixed everytime it changes pages */
 .ReadyToStart {
+    
     position: absolute;
-    bottom: -1883px;
-    right: 330px;
+    margin-left: 814px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .ReadyToStart button:hover {

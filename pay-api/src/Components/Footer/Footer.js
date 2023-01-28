@@ -24,12 +24,11 @@ const Footer = () => {
                             <Form>
                                 <Form.Group className={classes.FormGroup} controlId="formBasicRequest">
                                     <Form.Control type="email" placeholder="Enter email address" />
-                                    <div className={classes.ReadyToStart}>
-                                        <Button variant="primary">Schedule a Demo</Button>
-                                    </div>
                                 </Form.Group>
-                                
                             </Form>
+                            <div className={classes.ReadyToStart}>
+                                <Button variant="primary">Schedule a Demo</Button>
+                            </div>
                         </div>
                     </Col>
                 </Row>
