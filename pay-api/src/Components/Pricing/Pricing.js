@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 
 const Pricing = () => {
     return(
-        <div>
+        <div className={classes.MainPricingDiv}>
             <Container>
                 <Row>
                     <Col>
@@ -24,15 +24,15 @@ const Pricing = () => {
                                 <h4>Free Plan</h4>
                                 <h2>$0.00</h2>
                             </div>
-                            <div>
+                            <div className={classes.TheList}>
                                 <ul>
-                                    <li>Transaction</li>
-                                    <li>Auth</li>
-                                    <li>Identity</li>
-                                    <li>Investments</li>
-                                    <li>Assets</li>
-                                    <li>Liabilities</li>
-                                    <li>Income</li>
+                                    <li><p>Transaction</p></li>
+                                    <li><p>Auth</p></li>
+                                    <li><p>Identity</p></li>
+                                    <li><p>Investments</p></li>
+                                    <li><p>Assets</p></li>
+                                    <li><p>Liabilities</p></li>
+                                    <li><p>Income</p></li>
                                 </ul>
                                 <Button>Request Access</Button>
                             </div>
@@ -46,13 +46,13 @@ const Pricing = () => {
                             </div>
                             <div>
                                 <ul>
-                                    <li>Transaction</li>
-                                    <li>Auth</li>
-                                    <li>Identity</li>
-                                    <li>Investments</li>
-                                    <li>Assets</li>
-                                    <li>Liabilities</li>
-                                    <li>Income</li>
+                                    <li><p>Transaction</p></li>
+                                    <li><p>Auth</p></li>
+                                    <li><p>Identity</p></li>
+                                    <li><p>Investments</p></li>
+                                    <li><p>Assets</p></li>
+                                    <li><p>Liabilities</p></li>
+                                    <li><p>Income</p></li>
                                 </ul>
                                 <Button>Request Access</Button>
                             </div>
@@ -66,13 +66,13 @@ const Pricing = () => {
                             </div>
                             <div>
                                 <ul>
-                                    <li>Transaction</li>
-                                    <li>Auth</li>
-                                    <li>Identity</li>
-                                    <li>Investments</li>
-                                    <li>Assets</li>
-                                    <li>Liabilities</li>
-                                    <li>Income</li>
+                                    <li><p>Transaction</p></li>
+                                    <li><p>Auth</p></li>
+                                    <li><p>Identity</p></li>
+                                    <li><p>Investments</p></li>
+                                    <li><p>Assets</p></li>
+                                    <li><p>Liabilities</p></li>
+                                    <li><p>Income</p></li>
                                 </ul>
                                 <Button>Request Access</Button>
                             </div>

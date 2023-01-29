@@ -1,5 +1,61 @@
+.MainPricingDiv ul{
+    list-style: none;
+}
+
+.MainPricingDiv ul li {
+    list-style-image: url('../../icon-check.svg');
+}
+
+.MainPricingDiv h4 {
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 32px;
+    color: #BA4270;
+    margin-bottom: 80px;
+}
+
+.MainPricingDiv h2 {
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 56px;
+    color: #36536B;
+    margin-left: 15px;
+}
+
+.MainPricingDiv h1 {
+    font-family: 'DM Serif Display';
+    font-weight:bold;
+    font-size: 56px;
+    color: #36536B;
+}
+
+.MainPricingDiv p {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    color: #36536B;
+    margin-left: 15px;
+}
+
+.MainPricingDiv button {
+    background: transparent;
+    color: #36536B;
+    border-color:#36536B;
+    border-radius: 20px;
+    font-family: 'Public Sans';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 25px 8px 25px;
+}
+
+.MainPricingDiv button:hover {
+    background-color: #36536B;
+    color: white;
+    border-color: #36536B;
+}
+
 .Pricing {
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: -13px;
 }
+
