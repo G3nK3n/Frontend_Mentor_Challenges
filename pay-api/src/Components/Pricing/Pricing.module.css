@@ -1,9 +1,21 @@
 .MainPricingDiv ul{
     list-style: none;
+    padding-left: 20px;
 }
 
-.MainPricingDiv ul li {
+.Circle {
+    top: -550px;
+    right: 0px;
+    position: absolute;
+}
+
+
+.TheList{
     list-style-image: url('../../icon-check.svg');
+}
+
+.TheListOpacity {
+    opacity: 0.5;
 }
 
 .MainPricingDiv h4 {
@@ -19,7 +31,6 @@
     font-weight: bold;
     font-size: 56px;
     color: #36536B;
-    margin-left: 15px;
 }
 
 .MainPricingDiv h1 {
@@ -59,3 +70,6 @@
     margin-left: -13px;
 }
 
+.PlanDiv {
+    width: 350px;
+}
