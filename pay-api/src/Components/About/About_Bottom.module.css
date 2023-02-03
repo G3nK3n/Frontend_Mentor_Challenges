@@ -1,0 +1,74 @@
+.About_Bottom_Div {
+    margin-left:70px;
+    margin-top: 50px;
+}
+
+.Bottom_Analytics {
+    width: 350px;
+}
+
+.Bottom_Analytics p {
+    font-family: 'Public Sans';
+    font-size: 17px;
+    color: #36536B;
+}
+
+.Bottom_Analytics h1 {
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 56px;
+    color: #BA4270;
+}
+
+/* --- */
+
+.MainCultureDiv, .MainPeopleDiv {
+    width: 928px;
+    display: inline-block;
+    margin-left: 115px
+}
+
+.MainCultureDiv {
+    margin-top: 60px;
+}
+
+.MainPeopleDiv {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.CultureTitle, .PeopleTitle {
+    float: left;
+}
+
+.CultureTitle h2, .PeopleTitle h2 {
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 32px;
+    color: #36536B;
+} 
+
+.CultureText p, .PeopleText p {
+    font-family: 'Public Sans';
+    font-size: 15px;
+    line-height: 28px;
+    color: #36536B;
+} 
+
+.CultureText, .PeopleText{
+    width: 600px;
+    display: inline-block;
+}
+
+.CultureText {
+    margin-left: 130px;
+}
+
+.PeopleText {
+    margin-left: 144px;
+}
+
+.ImageDiv {
+    text-align: center;
+    margin-top: 70px;
+}

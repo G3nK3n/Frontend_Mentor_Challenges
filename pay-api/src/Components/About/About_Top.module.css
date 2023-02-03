@@ -56,3 +56,20 @@
 .BusinessText {
     margin-left: 97px;
 }
+
+.ImageDiv {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.PeopleImage {
+    z-index: 1;
+    position: relative;
+}
+
+.Circle {
+    position: absolute;
+    left: -530px;
+    bottom: -450px;
+}
+

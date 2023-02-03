@@ -12,7 +12,7 @@ const Header = () => {
         <div className={classes.MainHeaderDiv}>
             <Container>
                 <div className={classes.LeftSideLinks}>
-                    <img src={LogoImage} />
+                    <Link to={"/"}><img src={LogoImage} /></Link>
                 </div>
                 <ul>
                         <li><Link to={"/pricing"}>Pricing</Link></li>
