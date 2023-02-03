@@ -1,0 +1,58 @@
+.MainTitle {
+    width: 653px;
+    margin-top: 90px;
+    margin-left: 138px;
+}
+
+.MainTitle h1 {
+    font-family: 'DM Serif Display';
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #36536B;
+}
+
+.MainVisionDiv, .MainBusinessDiv {
+    width: 928px;
+    display: inline-block;
+    margin-left: 150px
+}
+
+.MainVisionDiv {
+    margin-top: 80px;
+}
+
+.MainBusinessDiv {
+    margin-top: 35px;
+}
+
+.VisionTitle, .BusinessTitle {
+    float: left;
+}
+
+.VisionTitle h2, .BusinessTitle h2 {
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 32px;
+    color: #36536B;
+} 
+
+.VisionText p, .BusinessText p {
+    font-family: 'Public Sans';
+    font-size: 15px;
+    line-height: 28px;
+    color: #36536B;
+} 
+
+.VisionText, .BusinessText{
+    width: 600px;
+    display: inline-block;
+}
+
+.VisionText {
+    margin-left: 130px;
+}
+
+.BusinessText {
+    margin-left: 97px;
+}
