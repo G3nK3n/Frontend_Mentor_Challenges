@@ -1,0 +1,15 @@
+.MainContactDiv {
+    margin-top: 100px;
+}
+
+.MainTitle h1 {
+    width: 730px;
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 56px;
+    color: #36536b;
+}
+
+.ContactForm {
+    margin-top: 50px;
+}
