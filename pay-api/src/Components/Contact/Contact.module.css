@@ -13,3 +13,43 @@
 .ContactForm {
     margin-top: 50px;
 }
+
+.RightSideContact {
+    width: 541px;    
+    margin-left: 200px;
+    margin-top: 60px;
+
+}
+
+.RightSideContact h3 {
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 24px;
+    width: 445px;
+    color: #36536b;
+    margin-bottom: 40px;
+}
+
+.RightSideContact ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom:40px;
+}
+
+.RightSideContact ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.HP, .Nvidia {
+    margin-right: 0px !important;
+}
+
+.Google {
+    margin-left:23px;
+}
+
+.Nvidia {
+    margin-left: 29px;
+}
+

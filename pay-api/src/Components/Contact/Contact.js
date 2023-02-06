@@ -55,17 +55,17 @@ const Contact = () => {
                         </div>
                     </Col>
                     <Col>
-                        <div>
+                        <div className={classes.RightSideContact}>
                             <h3>Join the thousands of innovators already building with us</h3>
                             <ul>
                                 <li><img src={Tesla} /></li>
                                 <li><img src={Microsoft} /></li>
-                                <li><img src={HP} /></li>
+                                <li className={classes.HP}><img src={HP} /></li>
                             </ul>
                             <ul>
                                 <li><img src={Oracle} /></li>
-                                <li><img src={Google} /></li>
-                                <li><img src={Nvidia} /></li>
+                                <li className={classes.Google}><img src={Google} /></li>
+                                <li className={classes.Nvidia}><img src={Nvidia} /></li>
                             </ul>
                         </div>
                     </Col>
