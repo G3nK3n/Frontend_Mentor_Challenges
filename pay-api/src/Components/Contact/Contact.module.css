@@ -11,7 +11,53 @@
 }
 
 .ContactForm {
-    margin-top: 50px;
+    margin-top: 50px;   
+}
+
+.ContactForm input, .ContactForm textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    opacity: 0.7;
+    border-radius: 0px;
+    padding: 10px 0px 15px 20px;
+    margin-top:10px;
+
+    font-family: 'Public Sans';
+    font-size:15px;
+    color: #36536b;
+}
+
+.ContactForm input:focus, .ContactForm textarea:focus {
+    color: black;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid;
+    opacity:1;
+
+}
+
+.ContactForm textarea {
+    padding-bottom: 50px;
+}
+
+.CheckBox {
+    width: 445px;
+}
+
+.CheckBox label {
+    margin-left: 25px;
+}
+
+.CheckBox input{
+    background-color: #36536b;
+    padding: 10px;
+    opacity: 0.25;
+}
+
+.CheckBox input:focus {
+    background-color: #BA4270;
 }
 
 .RightSideContact {

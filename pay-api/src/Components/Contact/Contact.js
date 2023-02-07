@@ -42,10 +42,11 @@ const Contact = () => {
                                     <Form.Control type="title" placeholder="Title" />
                                 </Form.Group>
                                 <Form.Group controlId="formBasicMessage">
-                                    <Form.Control type="message" placeholder="Message" />
+                                    <Form.Control as="textarea" row={4} type="message" placeholder="Message" />
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Check 
+                                        className={classes.CheckBox}
                                         type="checkbox"
                                         label="Stay up-to-date with company announcements and updates to our API"
                                     />
