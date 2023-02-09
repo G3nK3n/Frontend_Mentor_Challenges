@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import Feedback from 'react-bootstrap/Feedback'
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -15,6 +16,71 @@ import Oracle from '../../oracle.svg';
 import Tesla from '../../tesla.svg';
 
 const Contact = () => {
+
+    const [form, setForm] = useState({})
+    const [errors, setErrors] = useState({})
+
+    const setField = (field, value) => {
+        setForm({
+            ...form, 
+            [field]:value
+        })
+
+        //If there are no errors while onChanging, then set errors object to null
+        if(!!errors[field]) {
+            setErrors({
+                ...errors, 
+                [field]:null
+            })
+        }
+    }
+
+    const validateForm = (e) => {
+        
+        const {name, email, companyName, title, messages} = form;
+
+        const newErrors = {}
+
+        if(!name || name === '') {
+            newErrors.name = "Please enter your name";
+        }
+
+        if(!email || email === '') {
+            newErrors.email = "Please enter an email";
+        }
+        
+        if(!companyName || companyName === '') {
+            newErrors.companyName = "Please enter the company name";
+        }
+
+        if(!title || title === '') {
+            newErrors.title = "Please enter the company name";
+        }
+
+        if(!messages || messages === '') {
+            newErrors.messages = "Please enter the company name";
+        }
+        
+
+        return newErrors;
+
+    }
+
+    const handleSubmit  = (e) => {
+        e.preventDefault();
+
+        const formErrors = validateForm(e);
+
+        //If there are errors, then set the erros object
+        if(Object.keys(formErrors).length > 0) {
+            setErrors(formErrors);
+        }
+        else {
+            alert("Form sent!");
+        }
+    }
+
+
     return(
         <div className={classes.MainContactDiv}>
             <Container>
@@ -30,20 +96,35 @@ const Contact = () => {
                         <div className={classes.ContactForm}>
                             <Form>
                                 <Form.Group controlId="formBasicName">
-                                    <Form.Control type="name" placeholder="Name" />
+                                    <Form.Control onChange={(e) => setField('name', e.target.value)} isInvalid={!!errors.name} name="name" required type="name" placeholder="Name" />
                                 </Form.Group>
+                                <Form.Control.Feedback type='invalid'>
+                                    {errors.name}
+                                </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Email Address" />
+                                    <Form.Control onChange={(e) => setField('email', e.target.value)} isInvalid={!!errors.email} name="email" required type="email" placeholder="Email Address" />
                                 </Form.Group>
+                                <Form.Control.Feedback type='invalid'>
+                                    {errors.email}
+                                </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicCompanyName">
-                                    <Form.Control type="company_name" placeholder="Company Name" />
+                                    <Form.Control onChange={(e) => setField('companyName', e.target.value)} isInvalid={!!errors.companyName} name="companyName" required type="company_name" placeholder="Company Name" />
                                 </Form.Group>
+                                <Form.Control.Feedback type='invalid'>
+                                    {errors.companyName}
+                                </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicTitle">
-                                    <Form.Control type="title" placeholder="Title" />
+                                    <Form.Control onChange={(e) => setField('title', e.target.value)} isInvalid={!!errors.title} name="title" required type="title" placeholder="Title" />
                                 </Form.Group>
+                                <Form.Control.Feedback type='invalid'>
+                                    {errors.title}
+                                </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicMessage">
-                                    <Form.Control as="textarea" row={4} type="message" placeholder="Message" />
+                                    <Form.Control onChange={(e) => setField('messages', e.target.value)} isInvalid={!!errors.messages} name="messages" required as="textarea" row={4} type="message" placeholder="Message" />
                                 </Form.Group>
+                                <Form.Control.Feedback type='invalid'>
+                                    {errors.messages}
+                                </Form.Control.Feedback>
                                 <Form.Group>
                                     <Form.Check 
                                         className={classes.CheckBox}
@@ -51,7 +132,7 @@ const Contact = () => {
                                         label="Stay up-to-date with company announcements and updates to our API"
                                     />
                                 </Form.Group>
-                                <Button type="button">Submit</Button>
+                                <Button type="button" onClick={handleSubmit}>Submit</Button>
                             </Form>
                         </div>
                     </Col>
