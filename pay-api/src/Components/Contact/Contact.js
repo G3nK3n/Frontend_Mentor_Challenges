@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import Feedback from 'react-bootstrap/Feedback'
+import React, { useState } from "react";
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -19,6 +18,7 @@ const Contact = () => {
 
     const [form, setForm] = useState({})
     const [errors, setErrors] = useState({})
+
 
     const setField = (field, value) => {
         setForm({
@@ -41,6 +41,7 @@ const Contact = () => {
 
         const newErrors = {}
 
+        console.log('here')
         if(!name || name === '') {
             newErrors.name = "Please enter your name";
         }
@@ -68,7 +69,7 @@ const Contact = () => {
 
     const handleSubmit  = (e) => {
         e.preventDefault();
-
+        
         const formErrors = validateForm(e);
 
         //If there are errors, then set the erros object
@@ -95,34 +96,37 @@ const Contact = () => {
                     <Col>
                         <div className={classes.ContactForm}>
                             <Form>
+                                {/* Added d-block for invalid messages to appear */}
                                 <Form.Group controlId="formBasicName">
                                     <Form.Control onChange={(e) => setField('name', e.target.value)} isInvalid={!!errors.name} name="name" required type="name" placeholder="Name" />
                                 </Form.Group>
-                                <Form.Control.Feedback type='invalid'>
+                                <Form.Control.Feedback className="d-block" type="invalid">
                                     {errors.name}
                                 </Form.Control.Feedback>
+
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Control onChange={(e) => setField('email', e.target.value)} isInvalid={!!errors.email} name="email" required type="email" placeholder="Email Address" />
                                 </Form.Group>
-                                <Form.Control.Feedback type='invalid'>
+                                <Form.Control.Feedback className="d-block" type='invalid'>
                                     {errors.email}
                                 </Form.Control.Feedback>
+
                                 <Form.Group controlId="formBasicCompanyName">
                                     <Form.Control onChange={(e) => setField('companyName', e.target.value)} isInvalid={!!errors.companyName} name="companyName" required type="company_name" placeholder="Company Name" />
                                 </Form.Group>
-                                <Form.Control.Feedback type='invalid'>
+                                <Form.Control.Feedback className="d-block" type='invalid'>
                                     {errors.companyName}
                                 </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicTitle">
                                     <Form.Control onChange={(e) => setField('title', e.target.value)} isInvalid={!!errors.title} name="title" required type="title" placeholder="Title" />
                                 </Form.Group>
-                                <Form.Control.Feedback type='invalid'>
+                                <Form.Control.Feedback className="d-block" type='invalid'>
                                     {errors.title}
                                 </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicMessage">
                                     <Form.Control onChange={(e) => setField('messages', e.target.value)} isInvalid={!!errors.messages} name="messages" required as="textarea" row={4} type="message" placeholder="Message" />
                                 </Form.Group>
-                                <Form.Control.Feedback type='invalid'>
+                                <Form.Control.Feedback className="d-block" type='invalid'>
                                     {errors.messages}
                                 </Form.Control.Feedback>
                                 <Form.Group>
@@ -150,6 +154,7 @@ const Contact = () => {
                                 <li className={classes.Nvidia}><img src={Nvidia} /></li>
                             </ul>
                         </div>
+                        
                     </Col>
                 </Row>
             </Container>

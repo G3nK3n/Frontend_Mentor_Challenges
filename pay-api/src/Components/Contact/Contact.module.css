@@ -38,6 +38,10 @@
 
 }
 
+.invalid-feedback {
+    color: yellow;
+}
+
 .ContactForm textarea {
     padding-bottom: 50px;
 }
