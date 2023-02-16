@@ -18,6 +18,7 @@ const Contact = () => {
 
     const [form, setForm] = useState({})
     const [errors, setErrors] = useState({})
+    const [IsValid, setIsValid] = useState(true)
 
 
     const setField = (field, value) => {
@@ -55,11 +56,11 @@ const Contact = () => {
         }
 
         if(!title || title === '') {
-            newErrors.title = "Please enter the company name";
+            newErrors.title = "Please enter the a title";
         }
 
         if(!messages || messages === '') {
-            newErrors.messages = "Please enter the company name";
+            newErrors.messages = "Please write a message";
         }
         
 
@@ -75,9 +76,11 @@ const Contact = () => {
         //If there are errors, then set the erros object
         if(Object.keys(formErrors).length > 0) {
             setErrors(formErrors);
+            setIsValid(false);
         }
         else {
             alert("Form sent!");
+            setIsValid(true);
         }
     }
 
@@ -98,35 +101,35 @@ const Contact = () => {
                             <Form>
                                 {/* Added d-block for invalid messages to appear */}
                                 <Form.Group controlId="formBasicName">
-                                    <Form.Control onChange={(e) => setField('name', e.target.value)} isInvalid={!!errors.name} name="name" required type="name" placeholder="Name" />
+                                    <Form.Control onChange={(e) => setField('name', e.target.value)} isInvalid={!!errors.name} name="name" className={!IsValid ? classes.invalidPlaceholder : null} required type="name" placeholder="Name" />
                                 </Form.Group>
-                                <Form.Control.Feedback className="d-block" type="invalid">
+                                <Form.Control.Feedback className={classes.invalid} type="invalid">
                                     {errors.name}
                                 </Form.Control.Feedback>
 
                                 <Form.Group controlId="formBasicEmail">
-                                    <Form.Control onChange={(e) => setField('email', e.target.value)} isInvalid={!!errors.email} name="email" required type="email" placeholder="Email Address" />
+                                    <Form.Control onChange={(e) => setField('email', e.target.value)} isInvalid={!!errors.email} className={!IsValid ? classes.invalidPlaceholder : null} name="email" required type="email" placeholder="Email Address" />
                                 </Form.Group>
-                                <Form.Control.Feedback className="d-block" type='invalid'>
+                                <Form.Control.Feedback className={classes.invalid} type='invalid'>
                                     {errors.email}
                                 </Form.Control.Feedback>
 
                                 <Form.Group controlId="formBasicCompanyName">
-                                    <Form.Control onChange={(e) => setField('companyName', e.target.value)} isInvalid={!!errors.companyName} name="companyName" required type="company_name" placeholder="Company Name" />
+                                    <Form.Control onChange={(e) => setField('companyName', e.target.value)} isInvalid={!!errors.companyName} className={!IsValid ? classes.invalidPlaceholder : null} name="companyName" required type="company_name" placeholder="Company Name" />
                                 </Form.Group>
-                                <Form.Control.Feedback className="d-block" type='invalid'>
+                                <Form.Control.Feedback className={classes.invalid} type='invalid'>
                                     {errors.companyName}
                                 </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicTitle">
-                                    <Form.Control onChange={(e) => setField('title', e.target.value)} isInvalid={!!errors.title} name="title" required type="title" placeholder="Title" />
+                                    <Form.Control onChange={(e) => setField('title', e.target.value)} isInvalid={!!errors.title} className={!IsValid ? classes.invalidPlaceholder : null} name="title" required type="title" placeholder="Title" />
                                 </Form.Group>
-                                <Form.Control.Feedback className="d-block" type='invalid'>
+                                <Form.Control.Feedback className={classes.invalid} type='invalid'>
                                     {errors.title}
                                 </Form.Control.Feedback>
                                 <Form.Group controlId="formBasicMessage">
-                                    <Form.Control onChange={(e) => setField('messages', e.target.value)} isInvalid={!!errors.messages} name="messages" required as="textarea" row={4} type="message" placeholder="Message" />
+                                    <Form.Control onChange={(e) => setField('messages', e.target.value)} isInvalid={!!errors.messages} className={!IsValid ? classes.invalidPlaceholder : null} name="messages" required as="textarea" row={4} type="message" placeholder="Message" />
                                 </Form.Group>
-                                <Form.Control.Feedback className="d-block" type='invalid'>
+                                <Form.Control.Feedback className={classes.invalid} type='invalid'>
                                     {errors.messages}
                                 </Form.Control.Feedback>
                                 <Form.Group>

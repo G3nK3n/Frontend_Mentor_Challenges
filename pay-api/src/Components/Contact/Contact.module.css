@@ -28,6 +28,10 @@
     color: #36536b;
 }
 
+.invalidPlaceholder::placeholder {
+    color: red;
+}
+
 .ContactForm input:focus, .ContactForm textarea:focus {
     color: black;
     background-color: transparent;
@@ -38,9 +42,12 @@
 
 }
 
-.invalid-feedback {
-    color: yellow;
+.invalid {
+    display: block;
+    margin-left:20px;
+    font-size: 11px;
 }
+
 
 .ContactForm textarea {
     padding-bottom: 50px;
