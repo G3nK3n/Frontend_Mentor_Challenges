@@ -136,7 +136,20 @@
     margin-right: 24px;
 }
 
+/* RESPONSIVENESS */
 
+.OuterStart {
+    padding-right: 0px;
+    padding-left: 107px;
+}
 
+.ReadyToStart {
+    margin-left: 742px;
+}    
 
+.MainHeaderDiv {
+    height: 45px;
+    padding: 0px 45px 0px 108px;
+    margin: 20px 0px;
+}
 
