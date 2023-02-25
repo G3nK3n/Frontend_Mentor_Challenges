@@ -62,3 +62,34 @@
 .PersonalFinance img, .BankingCoverage img, .ConsumerPayment img{
     margin-bottom: 30px;
 }
+
+/* --- */
+
+@media (max-width: 1440px) {
+    .SimpleUI img{
+        margin-right: -60px;
+    }
+
+    .SimpleTexts {
+        margin-left: 59px;
+    }
+
+    .PersonalFinance, .BankingCoverage, .ConsumerPayment {
+        margin-left: 50px;
+        width: 320px;
+    }
+
+
+    .UI img{
+        margin-left: 10px;
+    }
+
+    .EasyTexts {
+        margin-left: 50px;
+    }
+
+    .MainBottomSectionDiv {
+        background-position-x: 1125px;
+    }
+
+}

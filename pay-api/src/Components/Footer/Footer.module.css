@@ -138,18 +138,28 @@
 
 /* RESPONSIVENESS */
 
-.OuterStart {
-    padding-right: 0px;
-    padding-left: 107px;
+@media (max-width: 1440px) {
+    .OuterStart {
+        padding-right: 0px;
+        padding-left: 107px;
+    }
+
+    .ReadyToStart {
+        margin-left: 712px;
+    }    
+
+    .MainHeaderDiv {
+        height: 45px;
+        padding: 0px 45px 0px 108px;
+        margin: 20px 0px;
+    }
+
+    .FormGroup input {
+        margin-right: 130px;
+    }
+
+    .RightSideLinks {
+        margin-right: 58px;
+    }
+
 }
-
-.ReadyToStart {
-    margin-left: 742px;
-}    
-
-.MainHeaderDiv {
-    height: 45px;
-    padding: 0px 45px 0px 108px;
-    margin: 20px 0px;
-}
-
