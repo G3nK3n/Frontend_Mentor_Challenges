@@ -100,3 +100,19 @@
     right: 35px;
     z-index: 1;
 }
+
+/* ---- */
+
+@media (max-width: 1440px) {
+    .MainBodyContents {
+        margin-left: 75px;
+    }
+
+    .ScheduleDemo {
+        left: 400px;
+    }
+
+    .PhoneImage {
+        right: 135px;
+    }
+}

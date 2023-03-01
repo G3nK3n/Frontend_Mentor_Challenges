@@ -52,3 +52,15 @@
     background: #DA6D97;
     border-color: #DA6D97;
 }
+
+/* ---- */
+
+@media (max-width: 1440px) {
+    .LeftSideLinks {
+        margin-left: 80px;
+    }
+
+    .RightSideLinks {
+        margin-right: 55px;
+    }
+}

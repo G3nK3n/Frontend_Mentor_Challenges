@@ -58,3 +58,15 @@
     text-align: center;
 
 }
+
+/* ---- */
+
+@media (max-width: 1440px) {
+    .LeftSideContent {
+        margin-left: 70px;
+    }
+
+    .RightSideContent {
+        right: 135px;
+    }
+}

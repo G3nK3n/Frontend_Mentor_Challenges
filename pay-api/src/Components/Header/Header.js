@@ -15,10 +15,10 @@ const Header = () => {
                     <Link to={"/"}><img src={LogoImage} /></Link>
                 </div>
                 <ul>
-                        <li><Link to={"/pricing"}>Pricing</Link></li>
-                        <li><Link to={"/about"}>About</Link></li>
-                        <li><Link to={"/contact"}>Contact</Link></li>
-                    </ul>
+                    <li><Link to={"/pricing"}>Pricing</Link></li>
+                    <li><Link to={"/about"}>About</Link></li>
+                    <li><Link to={"/contact"}>Contact</Link></li>
+                </ul>
                 <div className={classes.RightSideLinks}>
                     <Button variant="primary">Schedule a Demo</Button>
                 </div>

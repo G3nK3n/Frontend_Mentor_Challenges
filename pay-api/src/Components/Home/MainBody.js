@@ -30,7 +30,6 @@ const MainBody = () => {
                         <img className={classes.BackgroundCircle} src={BackgroundCircle} />
                     </div>
                 </div>
-                
             </Container>
         </div>
     )
