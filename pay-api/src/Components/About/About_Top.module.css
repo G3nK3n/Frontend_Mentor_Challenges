@@ -73,3 +73,18 @@
     bottom: -450px;
 }
 
+
+@media (max-width: 1440px) {
+    .MainTitle {
+        margin-left: 160px;
+    }
+
+    .MainVisionDiv, .MainBusinessDiv {
+        margin-left: 171px
+    }
+
+    .Circle {
+        bottom: -270px;
+    }
+
+}

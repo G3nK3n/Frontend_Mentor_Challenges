@@ -73,3 +73,10 @@
 .PlanDiv {
     width: 350px;
 }
+
+@media (max-width: 1440px) {
+    .MainPricingDiv {
+        margin-left: 140px;
+        margin-right: 60px;
+    }
+}

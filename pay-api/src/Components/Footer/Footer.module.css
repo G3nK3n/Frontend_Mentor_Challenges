@@ -141,16 +141,16 @@
 @media (max-width: 1440px) {
     .OuterStart {
         padding-right: 0px;
-        padding-left: 107px;
+        padding-left: 127px;
     }
 
     .ReadyToStart {
-        margin-left: 712px;
+        margin-left: 682px;
     }    
 
     .MainHeaderDiv {
         height: 45px;
-        padding: 0px 45px 0px 108px;
+        padding: 0px 70px 0px 126px;
         margin: 20px 0px;
     }
 
