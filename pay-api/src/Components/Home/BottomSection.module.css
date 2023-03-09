@@ -93,3 +93,23 @@
     }
 
 }
+
+@media (max-width: 1200px) {
+    .EasyTexts {
+        margin-left: 0px;
+    }
+
+    .SimpleUI {
+        float: right;
+        margin-top: -395px;
+    }
+
+    .PersonalFinance, .BankingCoverage, .ConsumerPayment {
+        margin-left: 0px;
+    }
+
+    .MainBottomSectionDiv {
+        background-position-x: 915px;
+    }
+
+}

@@ -116,3 +116,9 @@
         right: 135px;
     }
 }
+
+@media (max-width: 1200px) {
+    .PhoneImage {
+        right: 50px;
+    }
+}

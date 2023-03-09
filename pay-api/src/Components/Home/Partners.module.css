@@ -70,3 +70,13 @@
         right: 135px;
     }
 }
+
+@media (max-width: 1200px) {
+    .RightTable td {
+        padding-right: 0px;
+    }
+
+    .RightSideContent {
+        right: 45px;
+    }
+}
