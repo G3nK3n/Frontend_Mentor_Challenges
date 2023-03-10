@@ -122,3 +122,42 @@
         right: 50px;
     }
 }
+
+@media (max-width: 992px) {
+    .PhoneImage {
+        right: 230px;
+    }
+
+    .LeftSideContents {
+        width: 573px;
+        margin-left: 140px;
+        margin-top: 670px;
+    }
+
+    .MainBodyContents h1 {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .LeftSideContents input {
+        margin-left: 70px;
+    }
+
+    .LeftSideContents p {
+        text-align: center;
+    }
+
+    .ScheduleDemo {
+        left: 590px;
+        top: 897px;
+    }
+
+    .MainBodyContents {
+        height: 340px;
+    }
+
+    .FormGroup {
+        margin-top: -20px;
+    }
+}

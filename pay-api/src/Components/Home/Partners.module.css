@@ -80,3 +80,30 @@
         right: 45px;
     }
 }
+
+@media (max-width: 992px) {
+    
+    .PartnersDiv {
+        text-align: center;
+    }
+    
+    .LeftSideContent {
+        margin-left: 70px;
+        text-align: center;
+        width: 457px;
+        margin-top: 180px;
+    }
+
+    .LeftSideContent p {
+        font-size: 17px;
+    }
+
+    .LeftSideContent h1 {
+        margin-bottom: 25px;
+    }
+
+    .RightSideContent {
+        right: 190px;
+        top: 1185px;
+    }
+}

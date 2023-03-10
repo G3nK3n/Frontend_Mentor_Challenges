@@ -79,7 +79,6 @@
         width: 320px;
     }
 
-
     .UI img{
         margin-left: 10px;
     }
@@ -112,4 +111,23 @@
         background-position-x: 915px;
     }
 
+}
+
+@media (max-width: 992px) {
+    .UI img {
+        margin-left: 120px;
+        width: 530px;
+        height: 400px;
+    }
+
+    .UI {
+        text-align: center;
+    }
+
+    .EasyTexts {
+        margin-top: -60px;
+        margin-left: 218px;
+        text-align: center;
+        width: 573px;
+    }
 }
