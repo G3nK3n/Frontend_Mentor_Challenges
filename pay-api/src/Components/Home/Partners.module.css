@@ -88,7 +88,7 @@
     }
     
     .LeftSideContent {
-        margin-left: 70px;
+        margin-left: 0px;
         text-align: center;
         width: 457px;
         margin-top: 180px;
@@ -103,7 +103,7 @@
     }
 
     .RightSideContent {
-        right: 190px;
+        right: 227px;
         top: 1185px;
     }
 }

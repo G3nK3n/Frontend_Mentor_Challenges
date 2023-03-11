@@ -115,7 +115,7 @@
 
 @media (max-width: 992px) {
     .UI img {
-        margin-left: 120px;
+        margin-left: 30px;
         width: 530px;
         height: 400px;
     }
@@ -126,8 +126,16 @@
 
     .EasyTexts {
         margin-top: -60px;
-        margin-left: 218px;
+        margin-left: 173px;
         text-align: center;
         width: 573px;
+    }
+
+    .SimpleUI img {
+        margin-right: 0px;
+    }
+
+    .EasyTextsInnerDiv {
+        text-align: center;
     }
 }

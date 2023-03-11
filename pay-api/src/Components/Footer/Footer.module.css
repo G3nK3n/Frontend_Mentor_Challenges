@@ -182,3 +182,9 @@
     }
 
 }
+
+@media (max-width: 992px) {
+    .ReadyToStart {
+        margin-left: 314px;
+    }
+}

@@ -125,12 +125,12 @@
 
 @media (max-width: 992px) {
     .PhoneImage {
-        right: 230px;
+        right: 260px;
     }
 
     .LeftSideContents {
         width: 573px;
-        margin-left: 140px;
+        margin-left: 110px;
         margin-top: 670px;
     }
 
@@ -149,7 +149,7 @@
     }
 
     .ScheduleDemo {
-        left: 590px;
+        left: 560px;
         top: 897px;
     }
 

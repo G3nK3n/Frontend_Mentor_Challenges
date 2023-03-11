@@ -25,12 +25,14 @@ const BottomSection = () => {
                     </Col>
                     <Col>
                         <div className={classes.EasyTexts}>
+                            
                             <h1>Easy to implement</h1>
                             <p>
                                 Our API comes with just a few lines of code.
                                 You'll be up and running in no time. We build our
                                 documentation page to integrate paymements functionality with ease.
-                            </p>    
+                            </p> 
+                            
                         </div>
                     </Col>
                 </Row>
